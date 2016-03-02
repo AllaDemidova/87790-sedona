@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алла Демидова](https://up.htmlacademy.ru/adaptive/6/user/87790).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Полетаев] (https://htmlacademy.ru/profile/id148810)
 
 ---
 
