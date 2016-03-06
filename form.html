@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+</head>
+<body>
+    <header class="page-header">
+        <nav class="page-header__nav">
+            <ul class="page-header__nav-list">
+                <li class="page-header__nav-item"><a href="#">Главная</a></li>
+                <li class="page-header__nav-item"><a href="#">фото и видео</a></li>
+                <li class="page-header__nav-item"><a href="#">Форма отзыва</a></li>
+                <li class="page-header__nav-item"><a href="#">HTML academy</a></li>
+            </ul>
+            <!--у close_btn фоновое изображение, абсолютным позицыонирование помесится в правый верхний угол-->
+            <span class="close_btn">X</span>
+        </nav>
+        <!--ссылкe display:block, фоновое изображение-->
+        <a href="/" class="page-header__logo"></a>
+        <!--из макета не понятно как будет выглядеть после нажатия на кнопку-->
+        <span class="page-header__toggle-btn page-header__toggle-btn--closed"></span>
+    </header>
+<div class="mini-panorama">
+    <!--Тoт же стиль, что у main-panorama__title, возможно что-то не так-->
+    <h1 class="panorama-title">SEDONA</h1>
+</div>
+    <section class="info">
+        <h2 class="info__title">Оставьте свой отзыв</h2>
+        <p class="info__description">  Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а так же о посещённых достопримечательностях</p>
+    </section>
+<form>
+    <fieldset class="introduction-fieldset">
+        <!--В этом блоке расстояние между полями очень маленькое, не влезает сообщение об ошибке. Из макета не ясно, где оно должно находиться. Нужно чтобы высота блока увеличивалась, в случае ошибки?-->
+        <h2 class="title">Представьтесь, пожалуйста:</h2>
+        <div class="introduction-fieldset__field-wrapper">
+            <label class="introduction-fieldset__label" for="first-name">ИМЯ:</label>
+            <!--"Петр" не похоже на placeholder. Или всё-таки это его значение--> 
+            <input type="text" id="first-name" name="first-name" value="Петр" />
+        </div>
+        <div class="introduction-fieldset__field-wrapper">
+            <label class="introduction-fieldset__label" for="last-name">фАМИЛИЯ:</label>
+            <input type="text" id="last-name" name="last-name" value="Иванов" />
+        </div>
+        <div class="introduction-fieldset__field-wrapper">
+            <label class="introduction-fieldset__label" for="patronymic">ОТЧЕСТВО:</label>
+            <input type="text" id="patronymic" name="patronymic" value="Александрович" />
+        </div>
+    </fieldset>
+    <fieldset class="contacts-fieldset">
+        <h2 class="title">Контактная информация:</h2>
+        <div class="contacts-fieldset__field-wrapper">
+            <label class="contacts-fieldset__label" for="phone">Контактный телефон:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введите телефон"/>
+            <span class="validation-error">Ошибка, перепроверьте номер</span>
+        </div>
+        <div class="contacts-fieldset__field-wrapper">
+            <label class="contacts-fieldset__label" for="email">Электронная почта:</label>
+            <input type="tel" id="email" name="email" placeholder="Введите e-mail" />
+            <span class="validation-error"></span>
+        </div>
+    </fieldset>
+    <fieldset class="impression-fieldset">
+        <h2 class="title">Ваше общее впечатление:</h2>
+
+        <label for="impression1">Скорее положительное</label>
+        <input type="radio" id="impression1" name="impression1" value="1" checked />
+
+        <label for="impression2">Скорее отрицательное</label>
+        <input type="radio" id="impression2" name="impression2" value="2"/>
+
+        <label for="impression3">Затрудняюсь ответить</label>
+        <input type="radio" id="impression3" name="impression3" value="3" />
+    </fieldset>
+    <fieldset class="attraction-fieldset">
+        <h2 class="title">Посещенные достопримечательности:</h2>
+
+        <label for="attraction1">Мост Дьявола</label>
+        <input id="attraction1" type="checkbox" checked/>
+
+        <label for="attraction2">Слайд-парк</label>
+        <input id="attraction2" type="checkbox" checked/>
+
+        <label for="attraction3">Гора-Колокол</label>
+        <input id="attraction3" type="checkbox"/>
+
+        <label for="attraction4">Красные скалы</label>
+        <input id="attraction4" type="checkbox" checked />
+    </fieldset>
+    <fieldset class="feelings-fieldset">
+        <h2 class="title">Опишите свои эмоции:</h2>
+        <textarea placeholder="Опишите подробно все свои восторги"></textarea>
+    </fieldset>
+    <input class="confirm-btn" type="submit" value="ОТПРАВИТЬ ОТЗЫВ" />
+</form>    
+    <footer class="page-footer">
+        <p class="page-footer__note">#visitSEDONA</p>
+        <div class="social-links">
+            <div class="social-links_block">
+                <!--Насколько я поняла, модификаторы можно к блоку применять, а не только к элементу-->
+                <a href="#" class="social-links-icon social-links-icon--vk"></a>
+            </div>
+            <div class="social-links_block">
+                <a href="#" class="social-links-icon social-links-icon--facebook"></a>
+            </div>
+            <div class="social-links_block">
+                <a href="#" class="social-links-icon social-links-icon--youtube"></a>
+            </div>
+        </div>
+
+        <!--Логотип фоновым изображением или псевдоэлементом (первое мне больше нравится)-->
+        <a class="page-footer__copyright">Разработано</a>
+    </footer>
+</body>
+</html>

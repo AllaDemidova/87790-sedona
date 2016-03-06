@@ -21,31 +21,32 @@
         <!--из макета не понятно как будет выглядеть после нажатия на кнопку-->
         <span class="page-header__toggle-btn page-header__toggle-btn--closed"></span>
     </header>
-    <div class="welcome">
+    <div class="main-panorama">
         <!--Лучше надписи на пнораме сделать текстом, не бедт проблем с переводом. Не понятно откуда взять такие шрифты-->
-        <p class="welcome__top-note">WELCOME <span>&mdash; to the Gorgeous &mdash;</span></p>
-        <h1 class="welcome__title">SEDONA</h1>
-        <p class="welcome__bottom-note">""Because the Grand Canyon sucks"</p>
+        <p class="main-panorama__top-note">WELCOME <span>&mdash; to the Gorgeous &mdash;</span></p>
+        <h1 class="panorama-title">SEDONA</h1>
+        <p class="main-panorama__bottom-note">""Because the Grand Canyon sucks"</p>
     </div>
     <!--В классе introduction стилизация верхней и нижней границ, соседние блоки прямоугольные. Допустимо ли такое смешивание блоков?-->
-    <section class="introduction info">
-        <h2 class="info__title">СЕДОНА — небольшой городок в АРИЗОНЕ,зАСЛУЖИвающий большего!</h2>
-        <p class="info__description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+    <!--section-wrapper задаёт внутренние отступы блоков-->
+    <section class="introduction section-wrapper">
+        <h2 class="title">СЕДОНА — небольшой городок в АРИЗОНЕ,зАСЛУЖИвающий большего!</h2>
+        <p class="description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
     </section>
-<section class="reasons">
-    <!--Не очень нравиться элемент reasons__wrapper для задания фона и цвета шрифта, но модификатор тут тоже не к месту, по-моему-->
-    <div class="reasons__item reasons__wrapper">
-        <header class="reasons__header">
-            <h2>Настоящий городок</h2>
-            <span>&mdash; №1 &mdash;</span>
-        </header>
-        <p class="reasons__description">
-            СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
-        </p>
-    </div>
-    <img src="http://placehold.it/320x260"/>
-</section>
-    <section class="info">
+    <section class="reasons section-wrapper">
+        <!--Не очень нравиться элемент reasons__wrapper для задания фона и цвета шрифта, но модификатор тут тоже не к месту, по-моему-->
+        <div class="reasons__item reasons__wrapper">
+            <header class="reasons__header">
+                <h2 class="title">Настоящий городок</h2>
+                <span>&mdash; №1 &mdash;</span>
+            </header>
+            <p class="description">
+                СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+            </p>
+        </div>
+    </section>
+    <img src="http://placehold.it/320x260" />
+    <section class="info section-wrapper">
         <dl>
             <dt class="info__title info__title--house">Жильё</dt>
             <dd class="info__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
@@ -55,51 +56,53 @@
             <dd class="info__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</dd>
         </dl>
     </section>
-    <section class="reasons">
+    <section class="reasons section-wrapper">
         <div class="reasons__item reasons__wrapper">
             <header class="reasons__header">
-                <!--Хочется задать заголовку класс, но стиль такой же как у info__title. Разруливать миксинами препроцессора?-->
-                <h2>ТАМ ЕСТЬ Мост дьявола</h2>
+                <h2 class="title">ТАМ ЕСТЬ Мост дьявола</h2>
                 <span>&mdash; №2 &mdash;</span>
             </header>
             <!--То же, что и с заголовком-->
-            <p class="reasons__description">
+            <p class="description">
                 Да, по нему можно пройти! Если конечно вы осмелитесь.
             </p>
         </div>
-        <img src="http://placehold.it/320x260" />
+    </section>
+    <img src="http://placehold.it/320x260" />
+    <section class="reasons section-wrapper">
         <div class="reasons__item">
             <header class="reasons__header">
-                <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+                <h2 class="title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
                 <span>&mdash; №3 &mdash;</span>
             </header>
-            <p class="reasons__description">
+            <p class="description">
                 ВСЕ достопримечательности находятся очень близко
             </p>
         </div>
         <div class="reasons__item">
             <header class="reasons__header">
-                <h2>КРАСИВАЯ ДОРОГА</h2>
+                <h2 class="title">КРАСИВАЯ ДОРОГА</h2>
                 <span>&mdash; №4 &mdash;</span>
             </header>
-            <p class="reasons__description">
+            <p class="description">
                 ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем не скучно!
             </p>
         </div>
         <div class="reasons__item">
             <header class="reasons__header">
-                <h2>МАЛО ТУРИСТОВ</h2>
+                <h2 class="title">МАЛО ТУРИСТОВ</h2>
                 <span>&mdash; №5 &mdash;</span>
             </header>
-            <p class="reasons__description">
+            <p class="description">
                 Большинство едет в гранд каньон и толпится там
             </p>
         </div>
     </section>
-    <section class="info">
-        <h2 class="info__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p class="info__description">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостинниц в седоне</p>
+    <section class="info section-wrapper">
+        <h2 class="title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <p class="description">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостинниц в седоне</p>
         <!--Возможно, есть лучшее название для класса. Не могу придумать. Так может стилизоваться и ссылка, и кнопка сабмита, и кнопка OK в диалоговом окне-->
+        <!--Нет состояний hover и active потому, что это мобильная версия?-->
         <a href="#" class="confirm-btn">Найти гостиницу</a>
     </section>
     <section class="map">
@@ -119,7 +122,6 @@
                 <a href="#" class="social-links-icon social-links-icon--youtube"></a>
             </div>
         </div>
-
         <!--Логотип фоновым изображением или псевдоэлементом (первое мне больше нравится)-->
         <a class="page-footer__copyright">Разработано</a>
     </footer>
