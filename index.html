@@ -6,20 +6,22 @@
 </head>
 <body>
     <header class="page-header">
-        <nav class="page-header__nav">
-            <ul class="page-header__nav-list">
-                <li class="page-header__nav-item"><a href="#">Главная</a></li>
-                <li class="page-header__nav-item"><a href="#">фото и видео</a></li>
-                <li class="page-header__nav-item"><a href="#">Форма отзыва</a></li>
-                <li class="page-header__nav-item"><a href="#">HTML academy</a></li>
-            </ul>
-            <!--у close_btn фоновое изображение, абсолютным позицыонирование помесится в правый верхний угол-->
-            <span class="close_btn">X</span>
-        </nav>
-        <!--ссылкe display:block, фоновое изображение-->
-        <a href="/" class="page-header__logo"></a>
-        <!--из макета не понятно как будет выглядеть после нажатия на кнопку-->
-        <span class="page-header__toggle-btn page-header__toggle-btn--closed"></span>
+        <div class="page-header__wrapper">
+            <nav class="page-header__nav">
+                <ul class="page-header__nav-list">
+                    <li class="page-header__nav-item"><a href="#">Главная</a></li>
+                    <li class="page-header__nav-item"><a href="#">фото и видео</a></li>
+                    <li class="page-header__nav-item"><a href="#">Форма отзыва</a></li>
+                    <li class="page-header__nav-item"><a href="#">HTML academy</a></li>
+                </ul>
+                <!--у close_btn фоновое изображение, абсолютным позицыонирование помесится в правый верхний угол-->
+                <span class="close_btn">X</span>
+            </nav>
+            <!--ссылкe display:block, фоновое изображение-->
+            <a href="/" class="page-header__logo"></a>
+            <!--из макета не понятно как будет выглядеть после нажатия на кнопку-->
+            <span class="page-header__toggle-btn page-header__toggle-btn--closed"></span>
+        </div>
     </header>
     <div class="main-panorama">
         <!--Лучше надписи на пнораме сделать текстом, не бедт проблем с переводом. Не понятно откуда взять такие шрифты-->
@@ -109,21 +111,23 @@
         <img src="http://placehold.it/320x350" />
     </section>
     <footer class="page-footer">
-        <p class="page-footer__note">#visitSEDONA</p>
-        <div class="social-links">
-            <div class="social-links_block">
-                <!--Насколько я поняла, модификаторы можно к блоку применять, а не только к элементу-->
-                <a href="#" class="social-links-icon social-links-icon--vk"></a>
+        <div class="page-footer__wrapper">
+            <p class="page-footer__note">#visitSEDONA</p>
+            <div class="social-links">
+                <div class="social-links_block">
+                    <!--Насколько я поняла, модификаторы можно к блоку применять, а не только к элементу-->
+                    <a href="#" class="social-links-icon social-links-icon--vk"></a>
+                </div>
+                <div class="social-links_block">
+                    <a href="#" class="social-links-icon social-links-icon--facebook"></a>
+                </div>
+                <div class="social-links_block">
+                    <a href="#" class="social-links-icon social-links-icon--youtube"></a>
+                </div>
             </div>
-            <div class="social-links_block">
-                <a href="#" class="social-links-icon social-links-icon--facebook"></a>
-            </div>
-            <div class="social-links_block">
-                <a href="#" class="social-links-icon social-links-icon--youtube"></a>
-            </div>
+            <!--Логотип фоновым изображением или псевдоэлементом (первое мне больше нравится)-->
+            <a class="page-footer__copyright">Разработано</a>
         </div>
-        <!--Логотип фоновым изображением или псевдоэлементом (первое мне больше нравится)-->
-        <a class="page-footer__copyright">Разработано</a>
     </footer>
 </body>
 </html>

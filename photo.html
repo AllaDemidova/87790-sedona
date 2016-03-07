@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+</head>
+<body>
+    <header class="page-header">
+        <div class="page-header__wrapper">
+            <nav class="page-header__nav">
+                <ul class="page-header__nav-list">
+                    <li class="page-header__nav-item"><a href="#">Главная</a></li>
+                    <li class="page-header__nav-item"><a href="#">фото и видео</a></li>
+                    <li class="page-header__nav-item"><a href="#">Форма отзыва</a></li>
+                    <li class="page-header__nav-item"><a href="#">HTML academy</a></li>
+                </ul>
+                <!--у close_btn фоновое изображение, абсолютным позицыонирование помесится в правый верхний угол-->
+                <span class="close_btn">X</span>
+            </nav>
+            <!--ссылкe display:block, фоновое изображение-->
+            <a href="/" class="page-header__logo"></a>
+            <!--из макета не понятно как будет выглядеть после нажатия на кнопку-->
+            <span class="page-header__toggle-btn page-header__toggle-btn--closed"></span>
+        </div>
+    </header>
+    <div class="mini-panorama">
+        <!--Тoт же стиль, что у main-panorama__title, возможно что-то не так-->
+        <h1 class="panorama-title">SEDONA</h1>
+    </div>
+    <section class="info section-wrapper">
+        <h2 class="title">Фото и видео</h2>
+        <p class="description"> Фото и видео Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+    </section>
+    <section class="photo-list">
+        <div class="photo-list__item section-wrapper">
+            <img src="http://placehold.it/280x280" />
+            <p class="photo-list__photo-title">неродные просторы</p>
+            <p class="photo-list_author">Автор фото: Борис</p>
+            <span class="photo-list__vote">1350</span>
+        </div>
+        <div class="photo-list__item section-wrapper">
+            <img src="http://placehold.it/280x280" />
+            <p class="photo-list__photo-title">Местная растительность</p>
+            <span class="photo-list_author">Автор фото: Сергей</span>
+            <span class="photo-list__vote">143</span>
+        </div>
+        <div class="photo-list__item section-wrapper">
+            <img src="http://placehold.it/280x280" />
+            <p class="photo-list__photo-title">Дорога на север</p>
+            <p class="photo-list_author">Автор фото: Петр</p>
+            <span class="photo-list__vote">96</span>
+        </div>
+        <div class="photo-list__item section-wrapper">
+            <img src="http://placehold.it/280x280" />
+            <p class="photo-list__photo-title">Мост дьявола</p>
+            <p class="photo-list_author">Автор фото: Антон</p>
+            <span class="photo-list__vote">254</span>
+        </div>
+    </section>
+    <section class="info section-wrapper">
+        <h2 class="title">Все еще сомневаетесь? </h2>
+        <p class="description">Смотрите видеопрезентацию и скорее за билитами, пока они не подоражали в очередной раз</p>
+    </section>
+    <section class="video">
+        <!--Где взять ссылки на видео и картинку?-->
+        <video width="320" height="200" controls src="#" poster="#"></video>
+    </section>
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <p class="page-footer__note">#visitSEDONA</p>
+            <div class="social-links">
+                <div class="social-links_block">
+                    <!--Насколько я поняла, модификаторы можно к блоку применять, а не только к элементу-->
+                    <a href="#" class="social-links-icon social-links-icon--vk"></a>
+                </div>
+                <div class="social-links_block">
+                    <a href="#" class="social-links-icon social-links-icon--facebook"></a>
+                </div>
+                <div class="social-links_block">
+                    <a href="#" class="social-links-icon social-links-icon--youtube"></a>
+                </div>
+            </div>
+            <!--Логотип фоновым изображением или псевдоэлементом (первое мне больше нравится)-->
+            <a class="page-footer__copyright">Разработано</a>
+        </div>
+    </footer>
+</body>
+</html>
