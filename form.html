@@ -14,80 +14,73 @@
                     <li class="page-header__nav-item"><a href="#">Форма отзыва</a></li>
                     <li class="page-header__nav-item"><a href="#">HTML academy</a></li>
                 </ul>
-                <!--у close_btn фоновое изображение, абсолютным позицыонирование помесится в правый верхний угол-->
-                <span class="close_btn">X</span>
+                <span class="close-btn page-header__close-btn">X</span>
             </nav>
-            <!--ссылкe display:block, фоновое изображение-->
             <a href="/" class="page-header__logo"></a>
-            <!--из макета не понятно как будет выглядеть после нажатия на кнопку-->
             <span class="page-header__toggle-btn page-header__toggle-btn--closed"></span>
         </div>
     </header>
     <div class="mini-panorama">
-        <!--Тoт же стиль, что у main-panorama__title, возможно что-то не так-->
-        <h1 class="panorama-title">SEDONA</h1>
     </div>
     <section class="info">
         <h2 class="title">Оставьте свой отзыв</h2>
-        <p class="description">  Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а так же о посещённых достопримечательностях</p>
+        <p>  Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а так же о посещённых достопримечательностях</p>
     </section>
     <form>
-        <fieldset class="introduction-fieldset section-wrapper">
-            <!--В этом блоке расстояние между полями очень маленькое, не влезает сообщение об ошибке. Из макета не ясно, где оно должно находиться. Нужно чтобы высота блока увеличивалась, в случае ошибки?-->
+        <fieldset class="personal-data-fieldset section-wrapper">
             <h2 class="title">Представьтесь, пожалуйста:</h2>
-            <div class="introduction-fieldset__field-wrapper">
-                <label class="introduction-fieldset__label" for="first-name">ИМЯ:</label>
-                <!--"Петр" не похоже на placeholder. Или всё-таки это его значение-->
-                <input type="text" id="first-name" name="first-name" value="Петр" />
+            <div class="personal-data-fieldset__field-wrapper">
+                <label class="personal-data-fieldset__label" for="first-name">ИМЯ:</label>
+                <input class="personal-data-fieldset__input" type="text" id="first-name" name="first-name" value="Петр" />
             </div>
-            <div class="introduction-fieldset__field-wrapper">
-                <label class="introduction-fieldset__label" for="last-name">фАМИЛИЯ:</label>
-                <input type="text" id="last-name" name="last-name" value="Иванов" />
+            <div class="personal-data-fieldset__field-wrapper">
+                <label class="personal-data-fieldset__label" for="last-name">фАМИЛИЯ:</label>
+                <input class="personal-data-fieldset__input" type="text" id="last-name" name="last-name" value="Иванов" />
             </div>
-            <div class="introduction-fieldset__field-wrapper">
-                <label class="introduction-fieldset__label" for="patronymic">ОТЧЕСТВО:</label>
-                <input type="text" id="patronymic" name="patronymic" value="Александрович" />
+            <div class="personal-data-fieldset__field-wrapper">
+                <label class="personal-data-fieldset__label" for="patronymic">ОТЧЕСТВО:</label>
+                <input class="personal-data-fieldset__input" type="text" id="patronymic" name="patronymic" value="Александрович" />
             </div>
         </fieldset>
         <fieldset class="contacts-fieldset section-wrapper">
             <h2 class="title">Контактная информация:</h2>
             <div class="contacts-fieldset__field-wrapper">
                 <label class="contacts-fieldset__label" for="phone">Контактный телефон:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Введите телефон" />
+                <input class="contacts-fieldset__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" />
                 <span class="validation-error">Ошибка, перепроверьте номер</span>
             </div>
             <div class="contacts-fieldset__field-wrapper">
                 <label class="contacts-fieldset__label" for="email">Электронная почта:</label>
-                <input type="tel" id="email" name="email" placeholder="Введите e-mail" />
+                <input class="contacts-fieldset__input" type="tel" id="email" name="email" placeholder="Введите e-mail" />
                 <span class="validation-error"></span>
             </div>
         </fieldset>
         <fieldset class="impression-fieldset section-wrapper">
             <h2 class="title">Ваше общее впечатление:</h2>
 
-            <label for="impression1">Скорее положительное</label>
-            <input type="radio" id="impression1" name="impression1" value="1" checked />
+            <input type="radio" id="impression1" name="impression1" value="1" checked/>
+            <label class="impression-fieldset__label" for="impression1">Скорее положительное</label>
 
-            <label for="impression2">Скорее отрицательное</label>
-            <input type="radio" id="impression2" name="impression2" value="2" />
+            <input type="radio" id="impression2" name="impression2" value="2"/>
+            <label class="impression-fieldset__label" for="impression2">Скорее отрицательное</label>
 
-            <label for="impression3">Затрудняюсь ответить</label>
             <input type="radio" id="impression3" name="impression3" value="3" />
+            <label class="impression-fieldset__label" for="impression3">Затрудняюсь ответить</label>
         </fieldset>
         <fieldset class="attraction-fieldset section-wrapper">
             <h2 class="title">Посещенные достопримечательности:</h2>
 
-            <label for="attraction1">Мост Дьявола</label>
             <input id="attraction1" type="checkbox" checked />
+            <label class="attraction-fieldset__lable" for="attraction1">Мост Дьявола</label>
 
-            <label for="attraction2">Слайд-парк</label>
             <input id="attraction2" type="checkbox" checked />
+            <label class="attraction-fieldset__lable" for="attraction2">Слайд-парк</label>
 
-            <label for="attraction3">Гора-Колокол</label>
             <input id="attraction3" type="checkbox" />
+            <label class="attraction-fieldset__lable" for="attraction3">Гора-Колокол</label>
 
-            <label for="attraction4">Красные скалы</label>
             <input id="attraction4" type="checkbox" checked />
+            <label class="attraction-fieldset__lable" for="attraction4">Красные скалы</label>
         </fieldset>
         <fieldset class="feelings-fieldset section-wrapper">
             <h2 class="title">Опишите свои эмоции:</h2>
@@ -99,18 +92,10 @@
         <div class="page-footer__wrapper">
             <p class="page-footer__note">#visitSEDONA</p>
             <div class="social-links">
-                <div class="social-links_block">
-                    <!--Насколько я поняла, модификаторы можно к блоку применять, а не только к элементу-->
-                    <a href="#" class="social-links-icon social-links-icon--vk"></a>
-                </div>
-                <div class="social-links_block">
-                    <a href="#" class="social-links-icon social-links-icon--facebook"></a>
-                </div>
-                <div class="social-links_block">
-                    <a href="#" class="social-links-icon social-links-icon--youtube"></a>
-                </div>
+                <a href="#" class="social-links__icon social-links__icon--vk"></a>
+                <a href="#" class="social-links__icon social-links__icon--facebook"></a>
+                <a href="#" class="social-links__icon social-links__icon--youtube"></a>
             </div>
-            <!--Логотип фоновым изображением или псевдоэлементом (первое мне больше нравится)-->
             <a class="page-footer__copyright">Разработано</a>
         </div>
     </footer>

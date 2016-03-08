@@ -1,133 +1,111 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
 </head>
 <body>
-    <header class="page-header">
-        <div class="page-header__wrapper">
-            <nav class="page-header__nav">
-                <ul class="page-header__nav-list">
-                    <li class="page-header__nav-item"><a href="#">Главная</a></li>
-                    <li class="page-header__nav-item"><a href="#">фото и видео</a></li>
-                    <li class="page-header__nav-item"><a href="#">Форма отзыва</a></li>
-                    <li class="page-header__nav-item"><a href="#">HTML academy</a></li>
-                </ul>
-                <!--у close_btn фоновое изображение, абсолютным позицыонирование помесится в правый верхний угол-->
-                <span class="close_btn">X</span>
-            </nav>
-            <!--ссылкe display:block, фоновое изображение-->
-            <a href="/" class="page-header__logo"></a>
-            <!--из макета не понятно как будет выглядеть после нажатия на кнопку-->
-            <span class="page-header__toggle-btn page-header__toggle-btn--closed"></span>
-        </div>
-    </header>
-    <div class="main-panorama">
-        <!--Лучше надписи на пнораме сделать текстом, не бедт проблем с переводом. Не понятно откуда взять такие шрифты-->
-        <p class="main-panorama__top-note">WELCOME <span>&mdash; to the Gorgeous &mdash;</span></p>
-        <h1 class="panorama-title">SEDONA</h1>
-        <p class="main-panorama__bottom-note">""Because the Grand Canyon sucks"</p>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <nav class="page-header__nav">
+        <ul class="page-header__nav-list">
+          <li class="page-header__nav-item"><a href="#">Главная</a></li>
+          <li class="page-header__nav-item"><a href="#">фото и видео</a></li>
+          <li class="page-header__nav-item"><a href="#">Форма отзыва</a></li>
+          <li class="page-header__nav-item"><a href="#">HTML academy</a></li>
+        </ul>
+        <span class="close-btn page-header__close-btn">X</span>
+      </nav>
+      <a href="/" class="page-header__logo"></a>
+      <span class="page-header__toggle-btn page-header__toggle-btn--closed"></span>
     </div>
-    <!--В классе introduction стилизация верхней и нижней границ, соседние блоки прямоугольные. Допустимо ли такое смешивание блоков?-->
-    <!--section-wrapper задаёт внутренние отступы блоков-->
-    <section class="introduction section-wrapper">
-        <h2 class="title">СЕДОНА — небольшой городок в АРИЗОНЕ,зАСЛУЖИвающий большего!</h2>
-        <p class="description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
-    </section>
-    <section class="reasons section-wrapper">
-        <!--Не очень нравиться элемент reasons__wrapper для задания фона и цвета шрифта, но модификатор тут тоже не к месту, по-моему-->
-        <div class="reasons__item reasons__wrapper">
-            <header class="reasons__header">
-                <h2 class="title">Настоящий городок</h2>
-                <span>&mdash; №1 &mdash;</span>
-            </header>
-            <p class="description">
-                СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
-            </p>
-        </div>
-    </section>
-    <img src="http://placehold.it/320x260" />
-    <section class="info section-wrapper">
-        <dl>
-            <dt class="info__title info__title--house">Жильё</dt>
-            <dd class="info__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
-            <dt class="info__title info__title--gift">Сувениры</dt>
-            <dd class="info__description">Не только китайского, но и местного производства!</dd>
-            <dt class="info__title info__title--burger">Еда</dt>
-            <dd class="info__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</dd>
-        </dl>
-    </section>
-    <section class="reasons section-wrapper">
-        <div class="reasons__item reasons__wrapper">
-            <header class="reasons__header">
-                <h2 class="title">ТАМ ЕСТЬ Мост дьявола</h2>
-                <span>&mdash; №2 &mdash;</span>
-            </header>
-            <!--То же, что и с заголовком-->
-            <p class="description">
-                Да, по нему можно пройти! Если конечно вы осмелитесь.
-            </p>
-        </div>
-    </section>
-    <img src="http://placehold.it/320x260" />
-    <section class="reasons section-wrapper">
-        <div class="reasons__item">
-            <header class="reasons__header">
-                <h2 class="title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
-                <span>&mdash; №3 &mdash;</span>
-            </header>
-            <p class="description">
-                ВСЕ достопримечательности находятся очень близко
-            </p>
-        </div>
-        <div class="reasons__item">
-            <header class="reasons__header">
-                <h2 class="title">КРАСИВАЯ ДОРОГА</h2>
-                <span>&mdash; №4 &mdash;</span>
-            </header>
-            <p class="description">
-                ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем не скучно!
-            </p>
-        </div>
-        <div class="reasons__item">
-            <header class="reasons__header">
-                <h2 class="title">МАЛО ТУРИСТОВ</h2>
-                <span>&mdash; №5 &mdash;</span>
-            </header>
-            <p class="description">
-                Большинство едет в гранд каньон и толпится там
-            </p>
-        </div>
-    </section>
-    <section class="info section-wrapper">
-        <h2 class="title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p class="description">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостинниц в седоне</p>
-        <!--Возможно, есть лучшее название для класса. Не могу придумать. Так может стилизоваться и ссылка, и кнопка сабмита, и кнопка OK в диалоговом окне-->
-        <!--Нет состояний hover и active потому, что это мобильная версия?-->
-        <a href="#" class="confirm-btn">Найти гостиницу</a>
-    </section>
-    <section class="map">
-        <img src="http://placehold.it/320x350" />
-    </section>
-    <footer class="page-footer">
-        <div class="page-footer__wrapper">
-            <p class="page-footer__note">#visitSEDONA</p>
-            <div class="social-links">
-                <div class="social-links_block">
-                    <!--Насколько я поняла, модификаторы можно к блоку применять, а не только к элементу-->
-                    <a href="#" class="social-links-icon social-links-icon--vk"></a>
-                </div>
-                <div class="social-links_block">
-                    <a href="#" class="social-links-icon social-links-icon--facebook"></a>
-                </div>
-                <div class="social-links_block">
-                    <a href="#" class="social-links-icon social-links-icon--youtube"></a>
-                </div>
-            </div>
-            <!--Логотип фоновым изображением или псевдоэлементом (первое мне больше нравится)-->
-            <a class="page-footer__copyright">Разработано</a>
-        </div>
-    </footer>
+  </header>
+  <div class="main-panorama"></div>
+  <section class="introduction section-wrapper">
+    <h2 class="title">СЕДОНА — небольшой городок в АРИЗОНЕ,зАСЛУЖИвающий большего!</h2>
+    <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+  </section>
+  <section class="reasons section-wrapper">
+    <div class="reasons__item reasons__item--primary">
+      <header class="reasons__header">
+        <h2 class="title">Настоящий городок</h2>
+        <span>&mdash; №1 &mdash;</span>
+      </header>
+      <p>
+        СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+      </p>
+    </div>
+  </section>
+  <img width="320" height="260" src="http://placehold.it/320x260" alt="" />
+  <section class="info section-wrapper">
+    <dl>
+      <dt class="info__title info__title--house">Жильё</dt>
+      <dd class="info__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
+      <dt class="info__title info__title--gift">Сувениры</dt>
+      <dd class="info__description">Не только китайского, но и местного производства!</dd>
+      <dt class="info__title info__title--burger">Еда</dt>
+      <dd class="info__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</dd>
+    </dl>
+  </section>
+  <section class="reasons section-wrapper">
+    <div class="reasons__item reasons__item--primary">
+      <header class="reasons__header">
+        <h2 class="title">ТАМ ЕСТЬ Мост дьявола</h2>
+        <span>&mdash; №2 &mdash;</span>
+      </header>
+      <p>
+        Да, по нему можно пройти! Если конечно вы осмелитесь.
+      </p>
+    </div>
+  </section>
+  <img width="320" height="260" src="http://placehold.it/320x260" alt="" />
+  <section class="reasons section-wrapper">
+    <div class="reasons__item reasons__item--secondary">
+      <header class="reasons__header">
+        <h2 class="title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+        <span>&mdash; №3 &mdash;</span>
+      </header>
+      <p>
+        ВСЕ достопримечательности находятся очень близко
+      </p>
+    </div>
+    <div class="reasons__item reasons__item--secondary">
+      <header class="reasons__header">
+        <h2 class="title">КРАСИВАЯ ДОРОГА</h2>
+        <span>&mdash; №4 &mdash;</span>
+      </header>
+      <p>
+        ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем не скучно!
+      </p>
+    </div>
+    <div class="reasons__item reasons__item--secondary">
+      <header class="reasons__header">
+        <h2 class="title">МАЛО ТУРИСТОВ</h2>
+        <span>&mdash; №5 &mdash;</span>
+      </header>
+      <p>
+        Большинство едет в гранд каньон и толпится там
+      </p>
+    </div>
+  </section>
+  <section class="info section-wrapper">
+    <h2 class="title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+    <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостинниц в седоне</p>
+    <a href="#" class="button">Найти гостиницу</a>
+  </section>
+  <section class="map">
+    <img width="320" height="350" src="http://placehold.it/320x350" alt="" />
+  </section>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <p class="page-footer__note">#visitSEDONA</p>
+      <div class="social-links">
+        <a href="#" class="social-links__icon social-links__icon--vk"></a>
+        <a href="#" class="social-links__icon social-links__icon--facebook"></a>
+        <a href="#" class="social-links__icon social-links__icon--youtube"></a>
+      </div>
+      <a class="page-footer__copyright">Разработано</a>
+    </div>
+  </footer>
 </body>
 </html>
