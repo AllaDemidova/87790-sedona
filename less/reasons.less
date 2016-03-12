@@ -1,7 +1,7 @@
 .reasons {
 
   &__item--primary {
-    padding: 45px 0 10px;
+    padding: 45px 0 45px;
   }
 
   &__item--secondary {
@@ -22,4 +22,12 @@
 
 .reasons--secondary {
   background: #999999;
+}
+.reasons--triangle {
+  :before {
+    display:block;
+    content: "";
+    padding: 0 0 10px 0;
+    //стиль для треугольника
+  }
 }
