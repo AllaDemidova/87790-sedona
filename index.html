@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="page-header">
@@ -17,85 +18,100 @@
         <span class="close-btn page-header__close-btn">X</span>
       </nav>
       <a href="/" class="page-header__logo"></a>
-      <span class="page-header__toggle-btn page-header__toggle-btn--closed"></span>
+      <span class="page-header__toggle-btn page-header__toggle-btn--opened"></span>
     </div>
   </header>
-  <div class="main-panorama"></div>
-  <section class="introduction section-wrapper">
-    <h2 class="title">СЕДОНА — небольшой городок в АРИЗОНЕ,зАСЛУЖИвающий большего!</h2>
-    <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
-  </section>
-  <section class="reasons section-wrapper">
-    <div class="reasons__item reasons__item--primary">
-      <header class="reasons__header">
-        <h2 class="title">Настоящий городок</h2>
-        <span>&mdash; №1 &mdash;</span>
-      </header>
-      <p>
-        СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
-      </p>
+  <div class="main-container">
+    <div class="main-panorama"></div>
+    <div class="section-wrapper">
+      <section class="introduction">
+        <h2 class="title">СЕДОНА — небольшой городок в АРИЗОНЕ,зАСЛУЖИвающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+      </section>
     </div>
-  </section>
-  <img width="320" height="260" src="http://placehold.it/320x260" alt="" />
-  <section class="info section-wrapper">
-    <dl>
-      <dt class="info__title info__title--house">Жильё</dt>
-      <dd class="info__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
-      <dt class="info__title info__title--gift">Сувениры</dt>
-      <dd class="info__description">Не только китайского, но и местного производства!</dd>
-      <dt class="info__title info__title--burger">Еда</dt>
-      <dd class="info__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</dd>
-    </dl>
-  </section>
-  <section class="reasons section-wrapper">
-    <div class="reasons__item reasons__item--primary">
-      <header class="reasons__header">
-        <h2 class="title">ТАМ ЕСТЬ Мост дьявола</h2>
-        <span>&mdash; №2 &mdash;</span>
-      </header>
-      <p>
-        Да, по нему можно пройти! Если конечно вы осмелитесь.
-      </p>
+
+    <section class="reasons">
+      <div class="reasons__item reasons__item--primary">
+        <header class="reasons__header">
+          <h2 class="title">Настоящий городок</h2>
+          <span>&mdash; №1 &mdash;</span>
+        </header>
+        <p>
+          СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+        </p>
+      </div>
+    </section>
+
+    <img width="320" height="260" src="http://placehold.it/320x260" alt="" />
+    <div class="section-wrapper">
+      <section class="info">
+        <dl>
+          <dt class="info__title info__title--house">Жильё</dt>
+          <dd class="info__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
+          <dt class="info__title info__title--gift">Сувениры</dt>
+          <dd class="info__description">Не только китайского, но и местного производства!</dd>
+          <dt class="info__title info__title--burger">Еда</dt>
+          <dd class="info__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</dd>
+        </dl>
+      </section>
     </div>
-  </section>
-  <img width="320" height="260" src="http://placehold.it/320x260" alt="" />
-  <section class="reasons section-wrapper">
-    <div class="reasons__item reasons__item--secondary">
-      <header class="reasons__header">
-        <h2 class="title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
-        <span>&mdash; №3 &mdash;</span>
-      </header>
-      <p>
-        ВСЕ достопримечательности находятся очень близко
-      </p>
+
+    <section class="reasons">
+      <div class="reasons__item reasons__item--primary">
+        <header class="reasons__header">
+          <h2 class="title">ТАМ ЕСТЬ Мост дьявола</h2>
+          <span>&mdash; №2 &mdash;</span>
+        </header>
+        <p>
+          Да, по нему можно пройти! Если конечно вы осмелитесь.
+        </p>
+      </div>
+    </section>
+
+    <img width="320" height="260" src="http://placehold.it/320x260" alt="" />
+    <div class="section-wrapper">
+      <section class="reasons">
+        <div class="reasons__item reasons__item--secondary">
+          <header class="reasons__header">
+            <h2 class="title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+            <span>&mdash; №3 &mdash;</span>
+          </header>
+          <p>
+            ВСЕ достопримечательности находятся очень близко
+          </p>
+        </div>
+        <div class="reasons__item reasons__item--secondary">
+          <header class="reasons__header">
+            <h2 class="title">КРАСИВАЯ ДОРОГА</h2>
+            <span>&mdash; №4 &mdash;</span>
+          </header>
+          <p>
+            ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем не скучно!
+          </p>
+        </div>
+        <div class="reasons__item reasons__item--secondary">
+          <header class="reasons__header">
+            <h2 class="title">МАЛО ТУРИСТОВ</h2>
+            <span>&mdash; №5 &mdash;</span>
+          </header>
+          <p>
+            Большинство едет в гранд каньон и толпится там
+          </p>
+        </div>
+      </section>
     </div>
-    <div class="reasons__item reasons__item--secondary">
-      <header class="reasons__header">
-        <h2 class="title">КРАСИВАЯ ДОРОГА</h2>
-        <span>&mdash; №4 &mdash;</span>
-      </header>
-      <p>
-        ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем не скучно!
-      </p>
+    <div class="section-wrapper">
+      <section class="info">
+        <h2 class="title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостинниц в седоне</p>
+        <a href="#" class="button">Найти гостиницу</a>
+      </section>
     </div>
-    <div class="reasons__item reasons__item--secondary">
-      <header class="reasons__header">
-        <h2 class="title">МАЛО ТУРИСТОВ</h2>
-        <span>&mdash; №5 &mdash;</span>
-      </header>
-      <p>
-        Большинство едет в гранд каньон и толпится там
-      </p>
-    </div>
-  </section>
-  <section class="info section-wrapper">
-    <h2 class="title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-    <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостинниц в седоне</p>
-    <a href="#" class="button">Найти гостиницу</a>
-  </section>
-  <section class="map">
-    <img width="320" height="350" src="http://placehold.it/320x350" alt="" />
-  </section>
+    <section class="map">
+      <img width="320" height="350" src="http://placehold.it/320x350" alt="" />
+    </section>
+  </div>
+
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <p class="page-footer__note">#visitSEDONA</p>
