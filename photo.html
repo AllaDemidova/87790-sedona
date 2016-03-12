@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css" />
   <title>HTML Academy: Седона</title>
 </head>
 <body>
@@ -20,45 +21,55 @@
       <span class="page-header__toggle-btn page-header__toggle-btn--closed"></span>
     </div>
   </header>
-  <div class="mini-panorama">
+  <div class="main-container">
+    <div class="mini-panorama">
+    </div>
+    <section class="info section-wrapper">
+      <h2 class="title">Фото и видео</h2>
+      <p> Фото и видео Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+    </section>
+    <section class="photo-list">
+      <div class="photo-list__photo">
+        <div class="section-wrapper--photo">
+          <img class="photo-list__photo-image" width="280" height="280" src="http://placehold.it/280x280" alt="" />
+          <p class="photo-list__photo-title">неродные просторы</p>
+          <p class="photo-list_photo-author">Автор фото: Борис</p>
+          <span class="photo-list__photo-vote">1350</span>
+        </div>
+      </div>
+      <div class="photo-list__photo">
+        <div class="section-wrapper--photo">
+          <img class="photo-list__photo-image" width="280" height="280" src="http://placehold.it/280x280" alt="" />
+          <p class="photo-list__photo-title">Местная растительность</p>
+          <span class="photo-list_photo-author">Автор фото: Сергей</span>
+          <span class="photo-list__photo-vote">143</span>
+        </div>
+      </div>
+      <div class="photo-list__photo">
+        <div class="section-wrapper--photo">
+          <img class="photo-list__photo-image" width="280" height="280" src="http://placehold.it/280x280" alt="" />
+          <p class="photo-list__photo-title">Дорога на север</p>
+          <p class="photo-list_photo-author">Автор фото: Петр</p>
+          <span class="photo-list__photo-vote">96</span>
+        </div>
+      </div>
+      <div class="photo-list__photo">
+        <div class="section-wrapper--photo">
+          <img class="photo-list__photo-image" width="280" height="280" src="http://placehold.it/280x280" alt="" />
+          <p class="photo-list__photo-title">Мост дьявола</p>
+          <p class="photo-list_photo-author">Автор фото: Антон</p>
+          <span class="photo-list__photo-vote">254</span>
+        </div>
+      </div>
+    </section>
+    <section class="info section-wrapper">
+      <h2 class="title">Все еще сомневаетесь? </h2>
+      <p>Смотрите видеопрезентацию и скорее за билитами, пока они не подоражали в очередной раз</p>
+    </section>
+    <section class="video">
+      <video width="320" height="200" controls src="#" poster="/img/video-mobile.jpg"></video>
+    </section>
   </div>
-  <section class="info section-wrapper">
-    <h2 class="title">Фото и видео</h2>
-    <p> Фото и видео Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
-  </section>
-  <section class="photo-list">
-    <div class="photo-list__photo section-wrapper">
-      <img class="photo-list__photo-image" width="280" height="280" src="http://placehold.it/280x280" alt="" />
-      <p class="photo-list__photo-title">неродные просторы</p>
-      <p class="photo-list_photo-author">Автор фото: Борис</p>
-      <span class="photo-list__photo-vote">1350</span>
-    </div>
-    <div class="photo-list__photo section-wrapper">
-      <img class="photo-list__photo-image" width="280" height="280" src="http://placehold.it/280x280" alt="" />
-      <p class="photo-list__photo-title">Местная растительность</p>
-      <span class="photo-list_photo-author">Автор фото: Сергей</span>
-      <span class="photo-list__photo-vote">143</span>
-    </div>
-    <div class="photo-list__photo section-wrapper">
-      <img class="photo-list__photo-image" width="280" height="280" src="http://placehold.it/280x280" alt="" />
-      <p class="photo-list__photo-title">Дорога на север</p>
-      <p class="photo-list_photo-author">Автор фото: Петр</p>
-      <span class="photo-list__photo-vote">96</span>
-    </div>
-    <div class="photo-list__photo section-wrapper">
-      <img class="photo-list__photo-image" width="280" height="280" src="http://placehold.it/280x280" alt="" />
-      <p class="photo-list__photo-title">Мост дьявола</p>
-      <p class="photo-list_photo-author">Автор фото: Антон</p>
-      <span class="photo-list__photo-vote">254</span>
-    </div>
-  </section>
-  <section class="info section-wrapper">
-    <h2 class="title">Все еще сомневаетесь? </h2>
-    <p>Смотрите видеопрезентацию и скорее за билитами, пока они не подоражали в очередной раз</p>
-  </section>
-  <section class="video">
-    <video width="320" height="200" controls src="#" poster="#"></video>
-  </section>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <p class="page-footer__note">#visitSEDONA</p>
