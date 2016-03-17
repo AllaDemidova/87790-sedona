@@ -1,6 +1,7 @@
 .panorama {
-  width: 320px;
-  background: url('@{imagesPath}bg-back-mobile.jpg');
+  width: 100%;
+  background: url('@{imagesPath}bg-back-mobile.jpg') no-repeat;
+  background-size: cover;
 
   &--main {
     height: 389px;
@@ -11,4 +12,14 @@
     height: 160px;
     background-position: 140px 140px;
   }
+}
+
+@media @desktop-width and @tablet-width {
+  .panorama {
+    height: 518px;
+  }
+  &:after{
+    //стиль для скоса под панорамой
+  }
+
 }

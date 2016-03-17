@@ -1,18 +1,19 @@
 @font-face {
   font-family: 'PT Sans';
-  src: url('fonts/ptsans.woff') format('woff'), url('fonts/ptsans.woff2') format('woff2');
+  src: url('/fonts/ptsans.woff') format('woff'), url('/fonts/ptsans.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'PT Sans Bold';
-  src: url('fonts/ptsansbold.woff') format('woff'), url('fonts/ptsansbold.woff2') format('woff2');
+  src: url('/fonts/ptsansbold.woff') format('woff'), url('/fonts/ptsansbold.woff2') format('woff2');
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans';
-  font-size: 14px;
+  font-family: 'PT Sans', "Arial", sans-serif;
+  font-size: @baseFontSize;
+  text-transform: uppercase;
 }
 
 ul {
@@ -28,12 +29,19 @@ li {
   width: 100%;
 
   &__wrapper {
-    .main-width(320px);
+    .main-width();
+    box-sizing: border-box;
   }
 
   &__nav {
+    background: @blue-color;
     color: #ffffff;
     position: relative;
+  }
+
+  &__nav-item {
+    display: block;
+    height: 55px;
   }
 
   &__close-btn {
@@ -43,14 +51,82 @@ li {
   }
 
   &__logo {
-    width: 103px;
-    height: 85px;
-    background: url("");
+    display: block;
+    width: 102px;
+    height: 84px;
     margin: 0 auto;
+    background: url('@{imagesPath}logo-sedona-mobile.svg') no-repeat;
   }
 
   &__toggle-btn {
     display: inline-block;
     margin: -67px 0 0 277px;
+    background: url('@{imagesPath}icon-menu.svg');
   }
+}
+
+@media @tablet-width and @desktop-width {
+  .page-header {
+    &__nav {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    &__nav {
+      .clearfix();
+    }
+
+    &__nav-item {
+      height: 56px;
+      float: left;
+      font-family: 'PT Sans Bold', "Arial", sans-serif;;
+    }
+
+    &__logo {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -52px;
+    }
+
+    &__close-btn {
+      display: none;
+    }
+
+    &__toggle-btn {
+      display: none;
+    }
+  }
+}
+
+@media @desktop-width {
+  .page-header {
+    width: 100%;
+
+    &__wrapper {
+      padding:0 70px 0 90px;
+    }
+
+    &__nav-item:first-child {
+
+      margin: 0 160px 0 0;
+    }
+
+    &__nav-item:nth-child(2) {
+
+      margin: 0 383px 0 0;
+    }
+
+    &__nav-item:nth-last-child(2) {
+
+      margin: 0 138px 0 0;
+    }
+
+    &__nav-item:last-child {
+
+      margin: 0;
+    }
+  }
+
+
 }
