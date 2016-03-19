@@ -7,19 +7,31 @@
     height: 389px;
     background-position: center center;
   }
-
-  &--mini {
-    height: 160px;
-    background-position: 140px 140px;
+}
+@media @mobile-width {
+  .panorama {
+    &--mini {
+      height: 160px;
+    }
+    &:after {
+      //стиль для скоса под панорамой
+    }
   }
 }
-
-@media @desktop-width and @tablet-width {
+@media @tablet-width {
   .panorama {
-    height: 518px;
+    &--mini {
+      height: 290px;
+    }
+    &--main{
+      height: 518px;
+    }
   }
-  &:after{
-    //стиль для скоса под панорамой
+}
+@media @desktop-width {
+  .panorama{
+    &--mini {
+      height: 300px;
+    }
   }
-
 }

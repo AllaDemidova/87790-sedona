@@ -30,7 +30,6 @@ li {
 
   &__wrapper {
     .main-width();
-    box-sizing: border-box;
   }
 
   &__nav {
@@ -65,8 +64,12 @@ li {
   }
 }
 
-@media @tablet-width and @desktop-width {
+@media @tablet-width{
   .page-header {
+    &__wrapper {
+      padding:0 25px 0 50px;
+    }
+
     &__nav {
       background: #ffffff;
       color: #000000;
@@ -80,6 +83,26 @@ li {
       height: 56px;
       float: left;
       font-family: 'PT Sans Bold', "Arial", sans-serif;;
+    }
+
+    &__nav-item:first-child {
+
+      margin: 0 75px 0 0;
+    }
+
+    &__nav-item:nth-child(2) {
+
+      margin: 0 210px 0 0;
+    }
+
+    &__nav-item:nth-last-child(2) {
+
+      margin: 0 50px 0 0;
+    }
+
+    &__nav-item:last-child {
+
+      margin: 0;
     }
 
     &__logo {
@@ -127,6 +150,4 @@ li {
       margin: 0;
     }
   }
-
-
 }

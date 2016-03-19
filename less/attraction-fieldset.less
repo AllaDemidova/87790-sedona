@@ -1,0 +1,31 @@
+.attraction-fieldset{
+  border-top: 1px solid @gray-color;
+}
+@media @mobile-width {
+  .attraction-fieldset{
+    &__field-wrapper{
+      margin: 0 0 35px 0;
+    }
+    &__lable{
+      .inline-middle();
+      padding: 0 80px 0 0;
+    }
+  }
+}
+
+@media @tablet-width {
+  .attraction-fieldset {
+    &__field-wrapper:not(:last-child) {
+      margin: 0 70px 35px 0;
+    }
+  }
+}
+@media @desktop-width {
+  .attraction-fieldset {
+    .clearfix();
+    &__field-wrapper {
+      float: left;
+      margin: 0 65px 0 0;
+    }
+  }
+}

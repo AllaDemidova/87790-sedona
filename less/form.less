@@ -1,0 +1,35 @@
+.form{
+  position: relative;
+
+  input{
+    .border-none();
+    padding: 20px;
+    background: @gray-background;
+  }
+
+  /*input[type=checkbox], input[type=radio]{
+    display: none;
+  }*/
+}
+fieldset{
+  .border-none();
+  margin: 0;
+}
+
+@media @mobile-width {
+  .form{
+    fieldset {
+      border-top: 1px solid @gray-color;
+    }
+  }
+}
+@media @tablet-width {
+  .form{
+    &__title{
+      margin: -45px auto 35px;
+      width:400px;
+      background: @white-color;
+      text-align: center;
+    }
+  }
+}
