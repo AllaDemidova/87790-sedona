@@ -13,13 +13,13 @@
         <ul class="page-header__nav-list">
           <li class="page-header__nav-item"><a href="#">Главная</a></li>
           <li class="page-header__nav-item"><a href="#">фото и видео</a></li>
+          <li><a href="/" class="page-header__logo"></a></li>
           <li class="page-header__nav-item"><a href="#">Форма отзыва</a></li>
           <li class="page-header__nav-item"><a href="#">HTML academy</a></li>
         </ul>
         <span class="close-btn page-header__close-btn">X</span>
+        <span class="page-header__toggle-btn page-header__toggle-btn--opened"></span>
       </nav>
-      <a href="/" class="page-header__logo"></a>
-      <span class="page-header__toggle-btn page-header__toggle-btn--opened"></span>
     </div>
   </header>
   <div class="main-container">
@@ -46,14 +46,18 @@
     </section>
       <img width="320" height="260" src="http://placehold.it/320x260" alt="" />
       <section class="section-wrapper info">
-        <dl>
-          <dt class="title info__title info__title--house">Жильё</dt>
-          <dd class="info__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
-          <dt class="title info__title info__title--gift">Сувениры</dt>
-          <dd class="info__description">Не только китайского, но и местного производства!</dd>
-          <dt class="title info__title info__title--burger">Еда</dt>
-          <dd class="info__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</dd>
-        </dl>
+        <div class="info__block">
+          <h2 class="title info__title info__title--house">Жильё</h2>
+          <p class="info__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+          <div class="info__block">
+            <h2 class="title info__title info__title--gift">Сувениры</h2>
+            <p class="info__description">Не только китайского, но и местного производства!</p>
+          </div>
+          <div class="info__block">
+            <h2 class="title info__title info__title--burger">Еда</h2>
+            <p class="info__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          </div>
       </section>
       <section class="reasons reasons--primary">
         <div class="reasons__item reasons__item--primary">

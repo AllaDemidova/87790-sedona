@@ -15,6 +15,12 @@
 
 @media @tablet-width {
   .attraction-fieldset {
+    .clearfix();
+
+    &__field-group-wrapper{
+      float: left;
+    }
+
     &__field-wrapper:not(:last-child) {
       margin: 0 70px 35px 0;
     }
@@ -26,6 +32,10 @@
     &__field-wrapper {
       float: left;
       margin: 0 65px 0 0;
+    }
+
+    &__field-group-wrapper{
+      float: none;
     }
   }
 }

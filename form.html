@@ -13,13 +13,13 @@
         <ul class="page-header__nav-list">
           <li class="page-header__nav-item"><a href="#">Главная</a></li>
           <li class="page-header__nav-item"><a href="#">фото и видео</a></li>
+          <li><a href="/" class="page-header__logo"></a></li>
           <li class="page-header__nav-item"><a href="#">Форма отзыва</a></li>
           <li class="page-header__nav-item"><a href="#">HTML academy</a></li>
         </ul>
         <span class="close-btn page-header__close-btn">X</span>
+        <span class="page-header__toggle-btn page-header__toggle-btn--opened"></span>
       </nav>
-      <a href="/" class="page-header__logo"></a>
-      <span class="page-header__toggle-btn page-header__toggle-btn--closed"></span>
     </div>
   </header>
   <div class="main-container">
@@ -77,21 +77,25 @@
       </fieldset>
       <fieldset class="attraction-fieldset section-wrapper">
         <h2 class="title form__title">Посещенные достопримечательности:</h2>
-        <div class="attraction-fieldset__field-wrapper">
-          <input id="attraction1" type="checkbox" checked />
-          <label class="attraction-fieldset__lable" for="attraction1">Мост Дьявола</label>
+        <div class="attraction-fieldset__field-group-wrapper">
+          <div class="attraction-fieldset__field-wrapper">
+            <input id="attraction1" type="checkbox" checked />
+            <label class="attraction-fieldset__lable" for="attraction1">Мост Дьявола</label>
+          </div>
+          <div class="attraction-fieldset__field-wrapper">
+            <input id="attraction2" type="checkbox" checked />
+            <label class="attraction-fieldset__lable" for="attraction2">Слайд-парк</label>
+          </div>
         </div>
-        <div class="attraction-fieldset__field-wrapper">
-          <input id="attraction2" type="checkbox" checked />
-          <label class="attraction-fieldset__lable" for="attraction2">Слайд-парк</label>
-        </div>
-        <div class="attraction-fieldset__field-wrapper">
-          <input id="attraction3" type="checkbox" />
-          <label class="attraction-fieldset__lable" for="attraction3">Гора-Колокол</label>
-        </div>
-        <div class="attraction-fieldset__field-wrapper">
-          <input id="attraction4" type="checkbox" checked />
-          <label class="attraction-fieldset__lable" for="attraction4">Красные скалы</label>
+        <div class="attraction-fieldset__field-group-wrapper">
+          <div class="attraction-fieldset__field-wrapper">
+            <input id="attraction3" type="checkbox" />
+            <label class="attraction-fieldset__lable" for="attraction3">Гора-Колокол</label>
+          </div>
+          <div class="attraction-fieldset__field-wrapper">
+            <input id="attraction4" type="checkbox" checked />
+            <label class="attraction-fieldset__lable" for="attraction4">Красные скалы</label>
+          </div>
         </div>
       </fieldset>
       <fieldset class="feelings-fieldset section-wrapper">

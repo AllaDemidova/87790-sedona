@@ -16,7 +16,6 @@
       display:block;
       content: "";
       padding: 0 0 10px 0;
-      //����� ��� ������������
     }
   }
 
@@ -52,7 +51,7 @@
       width: 220px;
     }
     &__item--secondary:not(:last-child){
-      margin-right: 20px;
+      margin: 0 15px 0 0;
     }
   }
   .reasons--primary {
@@ -62,6 +61,11 @@
     float: left;
   }
   .reasons--secondary{
+    .clearfix();
+  }
+
+  img:after{
+    display: block;
     .clearfix();
   }
 }
