@@ -1,56 +1,100 @@
-@font-face {
-  font-family: 'PT Sans';
-  src: url('fonts/ptsans.woff') format('woff'), url('fonts/ptsans.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'PT Sans Bold';
-  src: url('fonts/ptsansbold.woff') format('woff'), url('fonts/ptsansbold.woff2') format('woff2');
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'PT Sans';
-  font-size: 14px;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
 .page-header {
   width: 100%;
 
   &__wrapper {
-    .main-width(320px);
+    .main-width();
+
+    @media @tablet-width{
+      padding:0 25px 0 50px;
+    }
+    @media @desktop-width{
+      padding:0 70px 0 90px;
+    }
   }
 
   &__nav {
-    color: #ffffff;
     position: relative;
+
+    @media @mobile-width {
+      background: @blue-color;
+      color: #ffffff;
+    }
+
+    @media @tablet-width{
+      height: 55px;
+      background: #ffffff;
+      color: #000000;
+      .clearfix();
+    }
+  }
+
+  &__nav-item {
+    display: block;
+    height: 55px;
+
+    @media @tablet-width{
+      height: 56px;
+      float: left;
+      font-family: 'PT Sans Bold';
+
+      &:not(:last-child){
+        margin: 0 50px 0 0;
+      }
+      &:first-child{
+        margin: 0 75px 0 0;
+      }
+    }
+
+    @media @desktop-width {
+      &:not(:last-child){
+        margin: 0 140px 0 0;
+      }
+      &:first-child{
+        margin: 0 160px 0 0;
+      }
+    }
   }
 
   &__close-btn {
     position: absolute;
     top: 17px;
     right: 19px;
+
+    @media @tablet-width{
+      display: none;
+    }
   }
 
   &__logo {
-    width: 103px;
-    height: 85px;
-    background: url("");
-    margin: 0 auto;
+    display: block;
+    width: 102px;
+    height: 84px;
+    background: url('@{imagesPath}logo-sedona-mobile.svg') no-repeat;
+
+    @media @mobile-width {
+      position: absolute;
+      bottom:-84px;
+      left: 50%;
+      margin-left: -51px;
+    }
+    @media @tablet-width{
+      position: static;
+      float: left;
+      margin:0 50px 0 0;
+
+    }
+    @media @desktop-width {
+      margin:0 140px 0 0;
+    }
   }
 
   &__toggle-btn {
     display: inline-block;
     margin: -67px 0 0 277px;
+    background: url('@{imagesPath}icon-menu.svg');
+
+    @media @tablet-width{
+      display: none;
+    }
   }
 }

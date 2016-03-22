@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css" />
   <title>HTML Academy: Седона</title>
 </head>
@@ -12,23 +13,25 @@
         <ul class="page-header__nav-list">
           <li class="page-header__nav-item"><a href="#">Главная</a></li>
           <li class="page-header__nav-item"><a href="#">фото и видео</a></li>
+          <li><a href="/" class="page-header__logo"></a></li>
           <li class="page-header__nav-item"><a href="#">Форма отзыва</a></li>
           <li class="page-header__nav-item"><a href="#">HTML academy</a></li>
         </ul>
         <span class="close-btn page-header__close-btn">X</span>
+        <span class="page-header__toggle-btn page-header__toggle-btn--opened"></span>
       </nav>
-      <a href="/" class="page-header__logo"></a>
-      <span class="page-header__toggle-btn page-header__toggle-btn--closed"></span>
     </div>
   </header>
   <div class="main-container">
-    <div class="mini-panorama">
+    <div class="panorama panorama--mini">
     </div>
-    <section class="section-wrapper">
-      <h2 class="title">Оставьте свой отзыв</h2>
-      <p>  Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а так же о посещённых достопримечательностях</p>
-    </section>
-    <form>
+    <div class="introduction">
+      <section class="section-wrapper">
+        <h2 class="title">Оставьте свой отзыв</h2>
+        <p> Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а так же о посещённых достопримечательностях</p>
+      </section>
+    </div>
+    <form class="form">
       <fieldset class="personal-data-fieldset section-wrapper">
         <h2 class="title">Представьтесь, пожалуйста:</h2>
         <div class="personal-data-fieldset__field-wrapper">
@@ -45,7 +48,7 @@
         </div>
       </fieldset>
       <fieldset class="contacts-fieldset section-wrapper">
-        <h2 class="title">Контактная информация:</h2>
+        <h2 class="title form__title">Контактная информация:</h2>
         <div class="contacts-fieldset__field-wrapper">
           <label class="contacts-fieldset__label" for="phone">Контактный телефон:</label>
           <input class="contacts-fieldset__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" />
@@ -59,45 +62,56 @@
       </fieldset>
       <fieldset class="impression-fieldset section-wrapper">
         <h2 class="title">Ваше общее впечатление:</h2>
-
-        <input type="radio" id="impression1" name="impression1" value="1" checked />
-        <label class="impression-fieldset__label" for="impression1">Скорее положительное</label>
-
-        <input type="radio" id="impression2" name="impression2" value="2" />
-        <label class="impression-fieldset__label" for="impression2">Скорее отрицательное</label>
-
-        <input type="radio" id="impression3" name="impression3" value="3" />
-        <label class="impression-fieldset__label" for="impression3">Затрудняюсь ответить</label>
+        <div class="impression-fieldsett__field-wrapper">
+          <input type="radio" id="impression1" name="impression1" value="1" checked />
+          <label class="impression-fieldset__label" for="impression1">Скорее положительное</label>
+        </div>
+        <div class="impression-fieldsett__field-wrapper">
+          <input type="radio" id="impression2" name="impression2" value="2" />
+          <label class="impression-fieldset__label" for="impression2">Скорее отрицательное</label>
+        </div>
+        <div class="impression-fieldsett__field-wrapper">
+          <input type="radio" id="impression3" name="impression3" value="3" />
+          <label class="impression-fieldset__label" for="impression3">Затрудняюсь ответить</label>
+        </div>
       </fieldset>
       <fieldset class="attraction-fieldset section-wrapper">
-        <h2 class="title">Посещенные достопримечательности:</h2>
-
-        <input id="attraction1" type="checkbox" checked />
-        <label class="attraction-fieldset__lable" for="attraction1">Мост Дьявола</label>
-
-        <input id="attraction2" type="checkbox" checked />
-        <label class="attraction-fieldset__lable" for="attraction2">Слайд-парк</label>
-
-        <input id="attraction3" type="checkbox" />
-        <label class="attraction-fieldset__lable" for="attraction3">Гора-Колокол</label>
-
-        <input id="attraction4" type="checkbox" checked />
-        <label class="attraction-fieldset__lable" for="attraction4">Красные скалы</label>
+        <h2 class="title form__title">Посещенные достопримечательности:</h2>
+        <div class="attraction-fieldset__field-group-wrapper">
+          <div class="attraction-fieldset__field-wrapper">
+            <input id="attraction1" type="checkbox" checked />
+            <label class="attraction-fieldset__lable" for="attraction1">Мост Дьявола</label>
+          </div>
+          <div class="attraction-fieldset__field-wrapper">
+            <input id="attraction2" type="checkbox" checked />
+            <label class="attraction-fieldset__lable" for="attraction2">Слайд-парк</label>
+          </div>
+        </div>
+        <div class="attraction-fieldset__field-group-wrapper">
+          <div class="attraction-fieldset__field-wrapper">
+            <input id="attraction3" type="checkbox" />
+            <label class="attraction-fieldset__lable" for="attraction3">Гора-Колокол</label>
+          </div>
+          <div class="attraction-fieldset__field-wrapper">
+            <input id="attraction4" type="checkbox" checked />
+            <label class="attraction-fieldset__lable" for="attraction4">Красные скалы</label>
+          </div>
+        </div>
       </fieldset>
       <fieldset class="feelings-fieldset section-wrapper">
-        <h2 class="title">Опишите свои эмоции:</h2>
+        <h2 class="title form__title">Опишите свои эмоции:</h2>
         <textarea placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
-      <input class="button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ" />
+      <input class="button button--submit" type="submit" value="ОТПРАВИТЬ ОТЗЫВ" />
     </form>
   </div>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <p class="page-footer__note">#visitSEDONA</p>
+      <p class="page-footer__note title">#visitSEDONA</p>
       <div class="social-links">
-        <a href="#" class="social-links__icon social-links__icon--vk"></a>
-        <a href="#" class="social-links__icon social-links__icon--facebook"></a>
-        <a href="#" class="social-links__icon social-links__icon--youtube"></a>
+        <a href="#" class="social-links__icon social-links__icon--vk">vk</a>
+        <a href="#" class="social-links__icon social-links__icon--facebook">fb</a>
+        <a href="#" class="social-links__icon social-links__icon--youtube">yt</a>
       </div>
       <a class="page-footer__copyright">Разработано</a>
     </div>

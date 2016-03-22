@@ -1,0 +1,37 @@
+.panorama {
+  width: 100%;
+  background: url('@{imagesPath}bg-back-mobile.jpg') no-repeat;
+  background-size: cover;
+
+  &--main {
+    height: 389px;
+    background-position: center center;
+  }
+}
+@media @mobile-width {
+  .panorama {
+    &--mini {
+      height: 160px;
+    }
+    &:after {
+      //стиль для скоса под панорамой
+    }
+  }
+}
+@media @tablet-width {
+  .panorama {
+    &--mini {
+      height: 290px;
+    }
+    &--main{
+      height: 518px;
+    }
+  }
+}
+@media @desktop-width {
+  .panorama{
+    &--mini {
+      height: 300px;
+    }
+  }
+}

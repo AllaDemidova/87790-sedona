@@ -1,4 +1,33 @@
-﻿.main-width(@width) {
-  max-width: @width;
+﻿.main-width() {
   margin: 0 auto;
+  box-sizing: border-box;
+
+  @media @mobile-width {
+    width: 320px;
+  }
+
+  @media @tablet-width {
+    width: 768px;
+  }
+
+  @media @desktop-width {
+    width: 1200px;
+  }
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display:block;
+    clear:both;
+  }
+}
+.inline-middle{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.border-none{
+  border: none;
+  outline:none;
 }

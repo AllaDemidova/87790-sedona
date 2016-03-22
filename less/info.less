@@ -1,3 +1,27 @@
-.info {
-  padding:5px 0 15px;
+.info{
+  @media @tablet-width{
+    .clearfix();
+  }
+  &__block{
+    @media @mobile-width {
+      margin: 0 0 40px 0;
+    }
+    @media @tablet-width{
+      float: left;
+      width: 170px;
+
+      &:not(:last-child){
+        margin: 0 86px 0 0;
+      }
+    }
+    @media @desktop-width {
+      width: 270px;
+
+      &:not(:last-child){
+        margin: 0 130px 0 0;
+      }
+    }
+  }
+  &__title{}
 }
+
