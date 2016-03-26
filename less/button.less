@@ -1,6 +1,14 @@
 .button {
   display:block;
+  padding: 16px;
   margin: 0 auto;
+  background: @blue-color;
+  color: @white-color;
+  .font-bold();
+
+  @media @mobile-width {
+    width: 248px;
+  }
 }
 .button--submit {
   margin-top:25px;
