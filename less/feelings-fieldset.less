@@ -1,7 +1,16 @@
 .feelings-fieldset{
-  border-top: 1px solid @gray-color;
+  display: flex;
+  flex-direction: column;
+
+  @media @tablet-width {
+    width: 708px;
+  }
+  @media @desktop-width {
+    width: 1140px;
+  }
   textarea{
-    width:100%;
+    width: 100%;
+    display: block;
     height: 160px;
     color: #000000;
     background: @gray-background;

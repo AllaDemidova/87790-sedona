@@ -1,0 +1,30 @@
+.submit-fieldset{
+  display: flex;
+  justify-content: space-between;
+  margin-top:25px;
+  margin-bottom:35px;
+
+  @media @tablet-width {
+    width: 708px;
+  }
+  @media @desktop-width {
+    width: 1140px;
+  }
+
+  &__button{
+    margin: 0;
+    @media @tablet-width {
+      width: 292px;
+    }
+    @media @desktop-width {
+      width: 464px;
+    }
+  }
+
+  &__required-note{
+    .label();
+    @media @mobile-width{
+      display: none;
+    }
+  }
+}

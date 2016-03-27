@@ -1,34 +1,78 @@
 .contacts-fieldset{
-  border-top: 1px solid @gray-color;
+  display: flex;
+
+  @media @mobile-width and @desktop-width {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  @media @tablet-width {
+    justify-content: space-between;
+  }
+
+  &__field-wrapper{
+    &:not(:last-child){
+      @media @mobile-width {
+        margin: 0 0 25px 0;
+      }
+      @media @tablet-width {
+        margin-bottom: 30px;
+      }
+      @media @desktop-width {
+        margin: 0 80px 0 0;
+      }
+    }
+  }
+
+  &__label{
+    .label();
+    .inline-middle();
+    margin: 0 0 10px 20px;
+
+    @media @desktop-width{
+      margin: 0 20px 0 0;
+    }
+  }
 
   &__input{
     display: block;
-  }
-}
-@media @tablet-width {
-  .contacts-fieldset{
-    &__input{
-      width: 590px;
+    position: relative;
+    .text-input();
+
+    &:after{
+      position: absolute;
+      top:0;
+      left: -58px;
+      display: block;
+      width: 58px;
+      height: 58px;
+      content: "sadsadasd";
+      background: @gray-input-button;
     }
 
-    &__field-wrapper{
-      margin-bottom: 30px;
+    @media @mobile-width{
+      width: 240px;
     }
-  }
-}
-
-@media @desktop-width {
-  .contacts-fieldset{
-    &__field-wrapper{
-      display: inline-block;
-      vertical-align: top;
-      margin: 0 80px 0 0;
+    @media @tablet-width {
+      width: 608px;
+      order:1;
     }
-    &__input{
+    @media @desktop-width {
       .inline-middle();
-      width: 260px;
+      width: 208px;
+      order:0;
     }
-
   }
 
+  &__error{
+    @media @mobile-width {
+      margin: 10px 0 0 20px;
+    }
+    @media @tablet-width {
+      margin: 0 0 15px 0;
+    }
+    @media @desktop-width {
+      order: -1;
+      margin: 0 0 15px 20px;
+    }
+  }
 }

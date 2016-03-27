@@ -35,10 +35,10 @@
     </div>
     <form class="form">
       <fieldset class="personal-data-fieldset section-wrapper">
-        <h2 class="title">Представьтесь, пожалуйста:</h2>
+        <h2 class="title form__title">Представьтесь, пожалуйста:</h2>
         <div class="personal-data-fieldset__field-wrapper">
           <label class="personal-data-fieldset__label" for="first-name">ИМЯ:</label>
-          <input class="personal-data-fieldset__input" type="text" id="first-name" name="first-name" value="Петр" />
+          <input class="personal-data-fieldset__input personal-data-fieldset__input--name" type="text" id="first-name" name="first-name" value="Петр" />
         </div>
         <div class="personal-data-fieldset__field-wrapper">
           <label class="personal-data-fieldset__label" for="last-name">фАМИЛИЯ:</label>
@@ -54,7 +54,7 @@
         <div class="contacts-fieldset__field-wrapper">
           <label class="contacts-fieldset__label" for="phone">Контактный телефон:</label>
           <input class="contacts-fieldset__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" />
-          <span class="validation-error">Ошибка, перепроверьте номер</span>
+          <span class="validation-error contacts-fieldset__error">Ошибка, перепроверьте номер</span>
         </div>
         <div class="contacts-fieldset__field-wrapper">
           <label class="contacts-fieldset__label" for="email">Электронная почта:</label>
@@ -63,7 +63,7 @@
         </div>
       </fieldset>
       <fieldset class="impression-fieldset section-wrapper">
-        <h2 class="title">Ваше общее впечатление:</h2>
+        <h2 class="title form__title">Ваше общее впечатление:</h2>
         <div class="impression-fieldsett__field-wrapper">
           <input type="radio" id="impression1" name="impression1" value="1" checked />
           <label class="impression-fieldset__label" for="impression1">Скорее положительное</label>
@@ -79,32 +79,32 @@
       </fieldset>
       <fieldset class="attraction-fieldset section-wrapper">
         <h2 class="title form__title">Посещенные достопримечательности:</h2>
-        <div class="attraction-fieldset__field-group-wrapper">
-          <div class="attraction-fieldset__field-wrapper">
+        <div class="attraction-fieldset__field-wrapper">
             <input id="attraction1" type="checkbox" checked />
             <label class="attraction-fieldset__lable" for="attraction1">Мост Дьявола</label>
           </div>
-          <div class="attraction-fieldset__field-wrapper">
+        <div class="attraction-fieldset__field-wrapper">
             <input id="attraction2" type="checkbox" checked />
             <label class="attraction-fieldset__lable" for="attraction2">Слайд-парк</label>
           </div>
+        <div class="attraction-fieldset__field-wrapper">
+          <input id="attraction3" type="checkbox" />
+          <label class="attraction-fieldset__lable" for="attraction3">Гора-Колокол</label>
         </div>
-        <div class="attraction-fieldset__field-group-wrapper">
-          <div class="attraction-fieldset__field-wrapper">
-            <input id="attraction3" type="checkbox" />
-            <label class="attraction-fieldset__lable" for="attraction3">Гора-Колокол</label>
-          </div>
-          <div class="attraction-fieldset__field-wrapper">
-            <input id="attraction4" type="checkbox" checked />
-            <label class="attraction-fieldset__lable" for="attraction4">Красные скалы</label>
-          </div>
+        <div class="attraction-fieldset__field-wrapper">
+          <input id="attraction4" type="checkbox" checked />
+          <label class="attraction-fieldset__lable" for="attraction4">Красные скалы</label>
         </div>
       </fieldset>
       <fieldset class="feelings-fieldset section-wrapper">
         <h2 class="title form__title">Опишите свои эмоции:</h2>
         <textarea placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
-      <input class="button button--submit" type="submit" value="ОТПРАВИТЬ ОТЗЫВ" />
+      <div class="submit-fieldset section-wrapper">
+        <input class="button submit-fieldset__button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ" />
+        <span submit-fieldset__required-note>* — обязательные поля</span>
+      </div>
+
     </form>
   </div>
   <footer class="page-footer">

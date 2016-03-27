@@ -1,41 +1,38 @@
 .attraction-fieldset{
-  border-top: 1px solid @gray-color;
-}
-@media @mobile-width {
-  .attraction-fieldset{
-    &__field-wrapper{
-      margin: 0 0 35px 0;
-    }
-    &__lable{
+  display: flex;
+  flex-wrap: nowrap;
+
+  @media @mobile-width {
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  @media @tablet-width {
+    width: 708px;
+  }
+  @media @desktop-width {
+    width: 1140px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  &__field-wrapper:not(:last-child){
+    margin: 0 0 35px 0;
+  }
+  &__lable{
+    .bold-label();
+
+    &:before{
       .inline-middle();
-      padding: 0 80px 0 0;
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+      background: @gray-background;
     }
   }
-}
-
-@media @tablet-width {
-  .attraction-fieldset {
-    .clearfix();
-
-    &__field-group-wrapper{
-      float: left;
-    }
-
-    &__field-wrapper:not(:last-child) {
-      margin: 0 70px 35px 0;
-    }
-  }
-}
-@media @desktop-width {
-  .attraction-fieldset {
-    .clearfix();
-    &__field-wrapper {
-      float: left;
-      margin: 0 65px 0 0;
-    }
-
-    &__field-group-wrapper{
-      float: none;
-    }
+  input:checked + label:before{
+    background: url("@{imagesPath}icon-tick.svg") no-repeat center center;
+    background-size: 24px 17px;
   }
 }

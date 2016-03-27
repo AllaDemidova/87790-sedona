@@ -35,5 +35,25 @@
 .font-bold{
   font-family: 'PT Sans Bold';
   font-weight: bold;
-  font-size: 21px;
+  @media @mobile-width {
+    font-size: 18px;
+  }
+  @media @tablet-width {
+    font-size: 21px;
+  }
+}
+
+.text-input{
+  padding: 18px 20px;
+  background: @gray-background;
+}
+.label{
+  font-size: 14px;
+  color: @label-color;
+}
+.bold-label{
+  font-family: 'PT Sans Bold';
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: none;
 }
