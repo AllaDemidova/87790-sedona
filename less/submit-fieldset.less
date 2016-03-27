@@ -12,8 +12,11 @@
   }
 
   &__button{
-    margin: 0;
+    @media @mobile-width {
+      margin-left: auto;
+    }
     @media @tablet-width {
+      margin: 0;
       width: 292px;
     }
     @media @desktop-width {

@@ -27,12 +27,14 @@
       .inline-middle();
       width: 60px;
       height: 60px;
+      content: "";
       border-radius: 5px;
       background: @gray-background;
+      margin: 0 25px 0 0;
     }
   }
   input:checked + label:before{
-    background: url("@{imagesPath}icon-tick.svg") no-repeat center center;
+    background: @gray-background url("@{imagesPath}icon-tick.svg") no-repeat center center;
     background-size: 24px 17px;
   }
 }

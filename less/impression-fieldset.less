@@ -12,7 +12,7 @@
     width: 539px;
   }
 
-  &__field-wrapper{
+  &__field-wrapper:not(:last-child){
     margin: 0 0 15px 0;
   }
   &__label{
@@ -20,16 +20,17 @@
 
     &:before{
       .inline-middle();
-      width: 50px;
-      height: 50px;
-      border: 5px solid @gray-background;
+      width: 25px;
+      height: 25px;
+      content: "";
+      border: 25px solid @gray-background;
       border-radius: 50%;
-      background: @black-color;
+      background: @gray-background;
       margin: 0 20px 0 0;
     }
   }
 
   input:checked + label:before{
-    background: @gray-background;
+    background-color: @black-color;
   }
 }
