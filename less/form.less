@@ -2,39 +2,14 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media @mobile-width {
-    flex-direction: column;
-  }
-
-  &__title{
-    display: block;
-    text-align: center;
-    margin: auto;
-    @media @mobile-width {
-      margin: 0 auto 25px;
-    }
-    @media @tablet-width {
-      width:400px;
-      background: @white-color;
-
-      &:before{
-        display: block;
-        border: 1px solid @gray-border;
-        align-self: center;
-      }
-    }
-  }
-
-  fieldset{
-    margin: 0;
-    @media @mobile-width {
-      border-top: 1px solid @gray-border;
-    }
+  @media @desktop-width {
+    padding:0  60px;
   }
 
   input{
     .border-none();
     .bold-label();
+    box-sizing: border-box;
   }
 
   input[placeholder]          {color: @black-color}
@@ -45,7 +20,4 @@
   input[type=checkbox], input[type=radio]{
     display: none;
   }
-}
-fieldset{
-  .border-none();
 }

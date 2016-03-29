@@ -1,17 +1,13 @@
-.impression-fieldset{
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
+.impression{
+  @media @tablet-width{
+    flex-basis: 50%;
+    margin: 0 0 70px 0;
+  }
 
   @media @tablet-width{
-    width: 323px;
     border-right: 1px solid @gray-border-right;
     order: -1;
   }
-  @media @desktop-width {
-    width: 539px;
-  }
-
   &__field-wrapper:not(:last-child){
     margin: 0 0 15px 0;
   }

@@ -34,35 +34,45 @@
       </section>
     </div>
     <form class="form">
-      <fieldset class="personal-data-fieldset section-wrapper">
-        <h2 class="title form__title">Представьтесь, пожалуйста:</h2>
-        <div class="personal-data-fieldset__field-wrapper">
-          <label class="personal-data-fieldset__label" for="first-name">ИМЯ:</label>
-          <input class="personal-data-fieldset__input personal-data-fieldset__input--name" type="text" id="first-name" name="first-name" value="Петр" />
+      <fieldset class="personal-data fieldset">
+        <div class="personal-data__title fieldset__title">
+          <span>Представьтесь, пожалуйста:</span>
         </div>
-        <div class="personal-data-fieldset__field-wrapper">
-          <label class="personal-data-fieldset__label" for="last-name">фАМИЛИЯ:</label>
-          <input class="personal-data-fieldset__input" type="text" id="last-name" name="last-name" value="Иванов" />
+        <div class="personal-data__field-wrapper">
+          <label class="personal-data__label" for="first-name">ИМЯ:</label>
+          <input class="personal-data__input" type="text" id="first-name" name="first-name" value="Петр" />
         </div>
-        <div class="personal-data-fieldset__field-wrapper">
-          <label class="personal-data-fieldset__label" for="patronymic">ОТЧЕСТВО:</label>
-          <input class="personal-data-fieldset__input" type="text" id="patronymic" name="patronymic" value="Александрович" />
+        <div class="personal-data__field-wrapper">
+          <label class="personal-data__label" for="last-name">фАМИЛИЯ:</label>
+          <input class="personal-data__input" type="text" id="last-name" name="last-name" value="Иванов" />
         </div>
-      </fieldset>
-      <fieldset class="contacts-fieldset section-wrapper">
-        <h2 class="title form__title">Контактная информация:</h2>
-        <div class="contacts-fieldset__field-wrapper">
-          <label class="contacts-fieldset__label" for="phone">Контактный телефон:</label>
-          <input class="contacts-fieldset__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" />
-          <span class="validation-error contacts-fieldset__error">Ошибка, перепроверьте номер</span>
-        </div>
-        <div class="contacts-fieldset__field-wrapper">
-          <label class="contacts-fieldset__label" for="email">Электронная почта:</label>
-          <input class="contacts-fieldset__input" type="tel" id="email" name="email" placeholder="Введите e-mail" />
-          <span class="validation-error"></span>
+        <div class="personal-data__field-wrapper">
+          <label class="personal-data__label" for="patronymic">ОТЧЕСТВО:</label>
+          <input class="personal-data__input" type="text" id="patronymic" name="patronymic" value="Александрович" />
         </div>
       </fieldset>
-      <fieldset class="impression-fieldset section-wrapper">
+      <fieldset class="contacts fieldset">
+        <div class="contacts__title fieldset__title fieldset__title--centred">
+          <span>Контактная информация:</span>
+        </div>
+        <div class="contacts__fields">
+          <div class="contacts__field-wrapper">
+            <label class="contacts__label" for="phone">Контактный телефон:</label>
+            <div class="contacts__input-control">
+              <input class="contacts__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" />
+            </div>
+            <span class="validation-error contacts__error">Ошибка, перепроверьте номер</span>
+          </div>
+          <div class="contacts__field-wrapper">
+            <label class="contacts__label" for="email">Электронная почта:</label>
+            <div class="contacts__input-control">
+              <input class="contacts__input" type="tel" id="email" name="email" placeholder="Введите e-mail" />
+            </div>
+            <span class="validation-error contacts__error"></span>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="impression fieldset">
         <h2 class="title form__title">Ваше общее впечатление:</h2>
         <div class="impression-fieldset__field-wrapper">
           <input type="radio" id="impression1" name="impression1" value="1" checked />
@@ -77,8 +87,10 @@
           <label class="impression-fieldset__label" for="impression3">Затрудняюсь ответить</label>
         </div>
       </fieldset>
-      <fieldset class="attraction-fieldset section-wrapper">
-        <h2 class="title form__title">Посещенные достопримечательности:</h2>
+      <fieldset class="attraction fieldset">
+        <div class="attraction__title fieldset__title fieldset__title--centred">
+          <span>Посещенные достопримечательности:</span>
+        </div>
         <div class="attraction-fieldset__field-wrapper">
             <input id="attraction1" type="checkbox" checked />
             <label class="attraction-fieldset__lable" for="attraction1">Мост Дьявола</label>
@@ -96,11 +108,11 @@
           <label class="attraction-fieldset__lable" for="attraction4">Красные скалы</label>
         </div>
       </fieldset>
-      <fieldset class="feelings-fieldset section-wrapper">
+      <fieldset class="feelings fieldset">
         <h2 class="title form__title">Опишите свои эмоции:</h2>
         <textarea placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
-      <div class="submit-fieldset section-wrapper">
+      <div class="submit fieldset">
         <input class="button submit-fieldset__button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ" />
         <span class="submit-fieldset__required-note">* — обязательные поля</span>
       </div>
