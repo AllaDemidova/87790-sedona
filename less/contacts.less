@@ -32,13 +32,13 @@
 
   &__field-wrapper{
     display: flex;
+    position: relative;
 
     @media @mobile-width {
       flex-direction: column;
     }
 
     @media @tablet-width {
-      position: relative;
       flex-wrap: wrap;
       flex-basis: 100%;
       justify-content: space-between;
@@ -47,10 +47,6 @@
     @media @desktop-width {
      flex-basis: auto;
       justify-content: flex-start;
-
-     /*&:last-child {
-        justify-content: flex-end;
-      }*/
     }
 
     &:not(:last-child){
@@ -101,6 +97,10 @@
       height: 58px;
       content: "";
       background: @gray-input-button;
+
+      @media @mobile-width{
+        bottom: 29px;
+      }
     }
   }
   &__input{

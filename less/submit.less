@@ -1,7 +1,7 @@
 .submit{
   display: flex;
+  flex-basis: 100%;
   justify-content: space-between;
-  margin-top:25px;
   margin-bottom:35px;
 
   @media @tablet-width {
@@ -26,6 +26,7 @@
 
   &__required-note{
     .label();
+    align-self: center;
     @media @mobile-width{
       display: none;
     }

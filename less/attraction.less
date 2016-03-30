@@ -1,18 +1,14 @@
 .attraction{
   display: flex;
-  flex-wrap: nowrap;
+  flex-basis: 100%;
 
   @media @mobile-width {
     flex-direction: column;
-    align-content: space-between;
   }
 
   @media @tablet-width {
-    width: 708px;
   }
   @media @desktop-width {
-    width: 1140px;
-    flex-direction: row;
     justify-content: space-between;
   }
   &__title{
