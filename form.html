@@ -73,48 +73,52 @@
         </div>
       </fieldset>
       <fieldset class="impression fieldset">
-        <h2 class="title form__title">Ваше общее впечатление:</h2>
-        <div class="impression-fieldset__field-wrapper">
+        <div class="impression__title fieldset__title">
+          <span>Ваше общее впечатление:</span>
+        </div>
+        <div class="impression__field-wrapper">
           <input type="radio" id="impression1" name="impression1" value="1" checked />
-          <label class="impression-fieldset__label" for="impression1">Скорее положительное</label>
+          <label class="impression__label" for="impression1">Скорее положительное</label>
         </div>
-        <div class="impression-fieldset__field-wrapper">
+        <div class="impression__field-wrapper">
           <input type="radio" id="impression2" name="impression2" value="2" />
-          <label class="impression-fieldset__label" for="impression2">Скорее отрицательное</label>
+          <label class="impression__label" for="impression2">Скорее отрицательное</label>
         </div>
-        <div class="impression-fieldset__field-wrapper">
+        <div class="impression__field-wrapper">
           <input type="radio" id="impression3" name="impression3" value="3" />
-          <label class="impression-fieldset__label" for="impression3">Затрудняюсь ответить</label>
+          <label class="impression__label" for="impression3">Затрудняюсь ответить</label>
         </div>
       </fieldset>
       <fieldset class="attraction fieldset">
         <div class="attraction__title fieldset__title fieldset__title--centred">
           <span>Посещенные достопримечательности:</span>
         </div>
-        <div class="attraction-fieldset__field-wrapper">
+        <div class="attraction__field-wrapper">
             <input id="attraction1" type="checkbox" checked />
-            <label class="attraction-fieldset__lable" for="attraction1">Мост Дьявола</label>
+            <label class="attraction__lable" for="attraction1">Мост Дьявола</label>
           </div>
-        <div class="attraction-fieldset__field-wrapper">
+        <div class="attraction__field-wrapper">
             <input id="attraction2" type="checkbox" checked />
-            <label class="attraction-fieldset__lable" for="attraction2">Слайд-парк</label>
+            <label class="attraction__lable" for="attraction2">Слайд-парк</label>
           </div>
-        <div class="attraction-fieldset__field-wrapper">
+        <div class="attraction__field-wrapper">
           <input id="attraction3" type="checkbox" />
-          <label class="attraction-fieldset__lable" for="attraction3">Гора-Колокол</label>
+          <label class="attraction__lable" for="attraction3">Гора-Колокол</label>
         </div>
-        <div class="attraction-fieldset__field-wrapper">
+        <div class="attraction__field-wrapper">
           <input id="attraction4" type="checkbox" checked />
-          <label class="attraction-fieldset__lable" for="attraction4">Красные скалы</label>
+          <label class="attraction__lable" for="attraction4">Красные скалы</label>
         </div>
       </fieldset>
       <fieldset class="feelings fieldset">
-        <h2 class="title form__title">Опишите свои эмоции:</h2>
+        <div class="attraction__title fieldset__title fieldset__title--centred">
+          <span>Опишите свои эмоции:</span>
+        </div>
         <textarea placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
       <div class="submit fieldset">
-        <input class="button submit-fieldset__button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ" />
-        <span class="submit-fieldset__required-note">* — обязательные поля</span>
+        <input class="button submit__button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ" />
+        <span class="submit__required-note">* — обязательные поля</span>
       </div>
     </form>
   </div>
