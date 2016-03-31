@@ -1,24 +1,50 @@
 .attraction{
-  display: flex;
   flex-basis: 100%;
 
-  @media @mobile-width {
-    flex-direction: column;
+  @media @tablet-width {
+    margin: 0 0 70px 0;
   }
 
-  @media @tablet-width {
+  &__fields{
+    display: flex;
+
+    @media @mobile-width {
+      flex-direction: column;
+    }
+    @media @tablet-width {
+      justify-content: space-between;
+      width: 460px;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+    @media @desktop-width {
+      width: 100%;
+
+    }
   }
-  @media @desktop-width {
-    justify-content: space-between;
-  }
+
   &__title{
     margin-bottom: 50px;
   }
 
+  &__field-wrapper{
+    @media @tablet-width{
+      &:last-child{
+        order: 3;
+      }
+      &:nth-last-child(1){
+        order:1;
+      }
+      &:nth-of-type(1){
+        order: 2;
+      }
+    }
 
-  &__field-wrapper:not(:last-child){
-    margin: 0 0 35px 0;
+    &:not(:last-child){
+      margin: 0 0 35px 0;
+    }
   }
+
   &__lable{
     .bold-label();
 
