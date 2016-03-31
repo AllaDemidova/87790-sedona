@@ -67,3 +67,17 @@
   height: 58px;
   content: "";
 }
+
+.button-states{
+  background: @blue-color;
+  color: @white-color;
+
+  &:hover{
+    cursor: pointer;
+    background: @button-hover;
+  }
+  &:active{
+    color: rgba(255, 255, 255, 0.6);
+    background: @button-presed;
+  }
+}
