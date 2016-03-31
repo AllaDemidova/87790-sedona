@@ -58,14 +58,14 @@
         <div class="contacts__fields">
           <div class="contacts__field-wrapper">
             <label class="contacts__label" for="phone">Контактный телефон:</label>
-            <div class="contacts__input-control">
+            <d.iv class="contacts__input-control contacts__input-control--phone">
               <input class="contacts__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" />
-            </div>
+            </d.iv>
             <span class="validation-error contacts__error">Ошибка, перепроверьте номер</span>
           </div>
           <div class="contacts__field-wrapper">
             <label class="contacts__label" for="email">Электронная почта:</label>
-            <div class="contacts__input-control">
+            <div class="contacts__input-control contacts__input-control--mail">
               <input class="contacts__input" type="tel" id="email" name="email" placeholder="Введите e-mail" />
             </div>
             <span class="validation-error contacts__error"></span>
@@ -77,15 +77,15 @@
           <span>Ваше общее впечатление:</span>
         </div>
         <div class="impression__field-wrapper">
-          <input type="radio" id="impression1" name="impression1" value="1" checked />
+          <input type="radio" id="impression1" name="impression" value="1" checked />
           <label class="impression__label" for="impression1">Скорее положительное</label>
         </div>
         <div class="impression__field-wrapper">
-          <input type="radio" id="impression2" name="impression2" value="2" />
+          <input type="radio" id="impression2" name="impression" value="2" />
           <label class="impression__label" for="impression2">Скорее отрицательное</label>
         </div>
         <div class="impression__field-wrapper">
-          <input type="radio" id="impression3" name="impression3" value="3" />
+          <input type="radio" id="impression3" name="impression" value="3" />
           <label class="impression__label" for="impression3">Затрудняюсь ответить</label>
         </div>
       </fieldset>
@@ -95,19 +95,19 @@
         </div>
         <div class="attraction__fields">
           <div class="attraction__field-wrapper">
-            <input id="attraction1" type="checkbox" checked />
+            <input id="attraction1" type="checkbox" name="attraction" value="1" checked />
             <label class="attraction__lable" for="attraction1">Мост Дьявола</label>
           </div>
           <div class="attraction__field-wrapper">
-            <input id="attraction2" type="checkbox" checked />
+            <input id="attraction2" type="checkbox" name="attraction" value="2" checked />
             <label class="attraction__lable" for="attraction2">Слайд-парк</label>
           </div>
           <div class="attraction__field-wrapper">
-            <input id="attraction3" type="checkbox" />
+            <input id="attraction3" type="checkbox" name="attraction" value="3"/>
             <label class="attraction__lable" for="attraction3">Гора-Колокол</label>
           </div>
           <div class="attraction__field-wrapper">
-            <input id="attraction4" type="checkbox" checked />
+            <input id="attraction4" type="checkbox" name="attraction" value="4" checked />
             <label class="attraction__lable" for="attraction4">Красные скалы</label>
           </div>
         </div>
