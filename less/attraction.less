@@ -54,12 +54,27 @@
       height: 60px;
       content: "";
       border-radius: 5px;
-      background: @gray-background;
+      background: @gray-background no-repeat center center;
       margin: 0 25px 0 0;
     }
+
+    &:hover:before{
+      cursor: pointer;
+      background-color: @button-disabled;
+    }
+
+    &:active:before{
+      background-color: @link-pressed;
+    }
   }
+
+
   input:checked + label:before{
-    background: @gray-background url("@{imagesPath}icon-tick.svg") no-repeat center center;
+    background-image: url("@{imagesPath}icon-tick.svg");
     background-size: 24px 17px;
+  }
+
+  input:checked + label:active:before{
+    //background-position: 0 -17px;
   }
 }
