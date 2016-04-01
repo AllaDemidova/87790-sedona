@@ -93,3 +93,16 @@
     background: @button-presed;
   }
 }
+
+.video-buttons-color(@state, @hover, @active){
+  fill: @state;
+
+  &:hover{
+    fill: @hover;
+    cursor: pointer;
+  }
+
+  &:active{
+    fill: @active;
+  }
+}

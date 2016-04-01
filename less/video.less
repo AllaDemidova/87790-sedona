@@ -1,11 +1,129 @@
-@media @tablet-width {
-  .video{
+.video{
+  @media @tablet-width {
     width: 650px;
     margin: 30px auto 40px;
+    position: relative;
   }
-}
-@media @desktop-width {
-  .video{
+  @media @desktop-width {
     margin-bottom: 80px;
   }
+
+  &__video{
+    display: block;
+  }
+
+  &__controls{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    @media @mobile-width {
+      position: relative;
+      width: 280px;
+      height: 66px;
+      background: @gray-background;
+      padding: 0 25px;
+      margin: 0 auto;
+    }
+
+    @media @tablet-width {
+      height: 93px;
+      padding: 0 42px;
+      background: rgba(5, 17, 4, 0.6);
+      position: absolute;
+      bottom: 0;
+      left:0;
+      right: 0;
+    }
+  }
+
+  &__replay{
+    align-self: center;
+    display: block;
+    background: url("@{imagesPath}icon-video-replay.svg") no-repeat;
+    flex: 0 0 16px;
+    height: 20px;
+    .video-buttons-color(@video-button-mobile, @video-button-mobile-hover, @video-button-mobile-active);
+
+    @media @mobile-width {
+      margin-right: auto;
+    }
+    @media @tablet-width {
+      fill: @white-color;
+    }
+  }
+
+  &__progress-bar-container{
+    flex-basis: 100%;
+
+    @media @mobile-width{
+      display: flex;
+      order: -1;
+      height: 55px;
+      position: absolute;
+      top: -55px;
+      left:0;
+      right: 0;
+      background: rgba(5, 17, 4, 0.6);
+      padding: 0 25px;
+    }
+
+    @media @tablet-width {
+      align-self: center;
+      margin: 0 40px;
+    }
+  }
+
+  &__progress-bar{
+    position: relative;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.2);
+
+    @media @mobile-width{
+      width: 100%;
+      align-self: center;
+    }
+  }
+
+  &__handler{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: @white-color;
+    position: absolute;
+    top: -3px;
+    left: 35px;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  &__close-cpation{
+    display: block;
+    align-self: center;
+    background: url("@{imagesPath}icon-video-subtitles.svg") no-repeat;
+    flex: 0 0 32px;
+    height: 20px;
+    .video-buttons-color(@video-button-mobile, @video-button-mobile-hover, @video-button-mobile-active);
+
+    @media @tablet-width {
+      fill: @white-color;
+    }
+  }
+
+  &__full-screen{
+    display: block;
+    align-self: center;
+    background: url("@{imagesPath}icon-video-fullscreen.svg") no-repeat;
+    flex: 0 0 20px;
+    height: 20px;
+    margin: 0 0 0 30px;
+    .video-buttons-color(@video-button-mobile, @video-button-mobile-hover, @video-button-mobile-active);
+
+    @media @tablet-width {
+      fill: @white-color;
+    }
+  }
 }
+
