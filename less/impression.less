@@ -24,9 +24,11 @@
       text-align: center;
     }
   }
+
   &__field-wrapper:not(:last-child){
     margin: 0 0 15px 0;
   }
+
   &__label{
     .bold-label();
 
@@ -39,6 +41,16 @@
       border-radius: 50%;
       background: @gray-background;
       margin: 0 20px 0 2px;
+    }
+
+    &:hover:before{
+      cursor: pointer;
+      border-color: @button-disabled;
+      background-color: @button-disabled;
+    }
+    &:active:before{
+      border-color: @link-pressed;
+      background-color: rgba(0,0,0, 0.6);
     }
   }
 
