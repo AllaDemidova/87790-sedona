@@ -1,0 +1,38 @@
+.feelings{
+  //display: flex;
+  flex-basis: 100%;
+  @media @mobile-width {
+    margin: 0 0 50px 0;
+  }
+  @media @tablet-width {
+    margin: 0 0 60px 0;
+  }
+
+  @media @tablet-width {
+    width: 708px;
+  }
+  @media @desktop-width {
+    width: 1140px;
+  }
+  &__title{
+    @media @mobile-width {
+      margin: 0 0 25px 0;
+    }
+    @media @tablet-width {
+      margin: 0 0 60px 0;
+    }
+  }
+  textarea{
+    .border-none();
+    width:  100%;
+    box-sizing: border-box;
+    height: 160px;
+    background: @gray-background;
+    padding: 22px;
+  }
+
+  textarea[placeholder]{
+    .bold-label();
+    color: @black-color;
+  }
+}

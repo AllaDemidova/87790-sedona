@@ -3,35 +3,41 @@
   background: url('@{imagesPath}bg-back-mobile.jpg') no-repeat;
   background-size: cover;
 
+  &:after{
+    //background: url("@{imagesPath}bg-triangle.svg");
+  }
+
+  &__text{
+    margin: 0 auto;
+    background: url('@{imagesPath}text-sedona-index.svg') no-repeat;
+
+    @media @tablet-width {
+      width: 460px;
+      height: 351px;
+      background-position: center 75px;
+    }
+
+    @media @desktop-width {
+      background-position: center 80px;
+    }
+  }
   &--main {
     height: 389px;
     background-position: center center;
-  }
-}
-@media @mobile-width {
-  .panorama {
-    &--mini {
-      height: 160px;
-    }
-    &:after {
-      //стиль для скоса под панорамой
-    }
-  }
-}
-@media @tablet-width {
-  .panorama {
-    &--mini {
-      height: 290px;
-    }
-    &--main{
+    @media @tablet-width {
       height: 518px;
     }
   }
-}
-@media @desktop-width {
-  .panorama{
-    &--mini {
+  &--mini{
+    @media @mobile-width {
+      height: 160px;
+    }
+    @media @tablet-width {
+      height: 290px;
+    }
+    @media @desktop-width {
       height: 300px;
     }
   }
 }
+

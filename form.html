@@ -8,19 +8,21 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <nav class="page-header__nav">
-        <ul class="page-header__nav-list">
-          <li class="page-header__nav-item"><a href="#">Главная</a></li>
-          <li class="page-header__nav-item"><a href="#">фото и видео</a></li>
-          <li><a href="/" class="page-header__logo"></a></li>
-          <li class="page-header__nav-item"><a href="#">Форма отзыва</a></li>
-          <li class="page-header__nav-item"><a href="#">HTML academy</a></li>
-        </ul>
-        <span class="close-btn page-header__close-btn">X</span>
-        <span class="page-header__toggle-btn page-header__toggle-btn--opened"></span>
-      </nav>
-    </div>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <nav class="page-header__nav">
+          <ul class="page-header__nav-list">
+            <li class="page-header__nav-item"><a href="/">Главная</a></li>
+            <li class="page-header__nav-item"><a href="/photo.html">фото и видео</a></li>
+            <li><a href="/" class="page-header__logo"></a></li>
+            <li class="page-header__nav-item"><a href="/form.html">Форма отзыва</a></li>
+            <li class="page-header__nav-item"><a href="https://htmlacademy.ru/">HTML academy</a></li>
+          </ul>
+          <span class="close-btn page-header__close-btn"></span>
+        </nav>
+        <span class="page-header__toggle-btn"></span>
+      </div>
+    </header>
   </header>
   <div class="main-container">
     <div class="panorama panorama--mini">
@@ -32,77 +34,94 @@
       </section>
     </div>
     <form class="form">
-      <fieldset class="personal-data-fieldset section-wrapper">
-        <h2 class="title">Представьтесь, пожалуйста:</h2>
-        <div class="personal-data-fieldset__field-wrapper">
-          <label class="personal-data-fieldset__label" for="first-name">ИМЯ:</label>
-          <input class="personal-data-fieldset__input" type="text" id="first-name" name="first-name" value="Петр" />
+      <fieldset class="personal-data fieldset">
+        <div class="personal-data__title fieldset__title">
+          <span>Представьтесь, пожалуйста:</span>
         </div>
-        <div class="personal-data-fieldset__field-wrapper">
-          <label class="personal-data-fieldset__label" for="last-name">фАМИЛИЯ:</label>
-          <input class="personal-data-fieldset__input" type="text" id="last-name" name="last-name" value="Иванов" />
+        <div class="personal-data__field-wrapper">
+          <label class="personal-data__label" for="first-name">ИМЯ:</label>
+          <input class="personal-data__input" type="text" id="first-name" name="first-name" value="Петр" />
         </div>
-        <div class="personal-data-fieldset__field-wrapper">
-          <label class="personal-data-fieldset__label" for="patronymic">ОТЧЕСТВО:</label>
-          <input class="personal-data-fieldset__input" type="text" id="patronymic" name="patronymic" value="Александрович" />
+        <div class="personal-data__field-wrapper">
+          <label class="personal-data__label" for="last-name">фАМИЛИЯ:</label>
+          <input class="personal-data__input" type="text" id="last-name" name="last-name" value="Иванов" />
         </div>
-      </fieldset>
-      <fieldset class="contacts-fieldset section-wrapper">
-        <h2 class="title form__title">Контактная информация:</h2>
-        <div class="contacts-fieldset__field-wrapper">
-          <label class="contacts-fieldset__label" for="phone">Контактный телефон:</label>
-          <input class="contacts-fieldset__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" />
-          <span class="validation-error">Ошибка, перепроверьте номер</span>
-        </div>
-        <div class="contacts-fieldset__field-wrapper">
-          <label class="contacts-fieldset__label" for="email">Электронная почта:</label>
-          <input class="contacts-fieldset__input" type="tel" id="email" name="email" placeholder="Введите e-mail" />
-          <span class="validation-error"></span>
+        <div class="personal-data__field-wrapper">
+          <label class="personal-data__label" for="patronymic">ОТЧЕСТВО:</label>
+          <input class="personal-data__input" type="text" id="patronymic" name="patronymic" value="Александрович" />
         </div>
       </fieldset>
-      <fieldset class="impression-fieldset section-wrapper">
-        <h2 class="title">Ваше общее впечатление:</h2>
-        <div class="impression-fieldsett__field-wrapper">
-          <input type="radio" id="impression1" name="impression1" value="1" checked />
-          <label class="impression-fieldset__label" for="impression1">Скорее положительное</label>
+      <fieldset class="contacts fieldset">
+        <div class="contacts__title fieldset__title fieldset__title--centred">
+          <span>Контактная информация:</span>
         </div>
-        <div class="impression-fieldsett__field-wrapper">
-          <input type="radio" id="impression2" name="impression2" value="2" />
-          <label class="impression-fieldset__label" for="impression2">Скорее отрицательное</label>
-        </div>
-        <div class="impression-fieldsett__field-wrapper">
-          <input type="radio" id="impression3" name="impression3" value="3" />
-          <label class="impression-fieldset__label" for="impression3">Затрудняюсь ответить</label>
-        </div>
-      </fieldset>
-      <fieldset class="attraction-fieldset section-wrapper">
-        <h2 class="title form__title">Посещенные достопримечательности:</h2>
-        <div class="attraction-fieldset__field-group-wrapper">
-          <div class="attraction-fieldset__field-wrapper">
-            <input id="attraction1" type="checkbox" checked />
-            <label class="attraction-fieldset__lable" for="attraction1">Мост Дьявола</label>
+        <div class="contacts__fields">
+          <div class="contacts__field-wrapper">
+            <label class="contacts__label" for="phone">Контактный телефон:</label>
+            <d.iv class="contacts__input-control contacts__input-control--phone">
+              <input class="contacts__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" />
+            </d.iv>
+            <span class="validation-error contacts__error">Ошибка, перепроверьте номер</span>
           </div>
-          <div class="attraction-fieldset__field-wrapper">
-            <input id="attraction2" type="checkbox" checked />
-            <label class="attraction-fieldset__lable" for="attraction2">Слайд-парк</label>
-          </div>
-        </div>
-        <div class="attraction-fieldset__field-group-wrapper">
-          <div class="attraction-fieldset__field-wrapper">
-            <input id="attraction3" type="checkbox" />
-            <label class="attraction-fieldset__lable" for="attraction3">Гора-Колокол</label>
-          </div>
-          <div class="attraction-fieldset__field-wrapper">
-            <input id="attraction4" type="checkbox" checked />
-            <label class="attraction-fieldset__lable" for="attraction4">Красные скалы</label>
+          <div class="contacts__field-wrapper">
+            <label class="contacts__label" for="email">Электронная почта:</label>
+            <div class="contacts__input-control contacts__input-control--mail">
+              <input class="contacts__input" type="tel" id="email" name="email" placeholder="Введите e-mail" />
+            </div>
+            <span class="validation-error contacts__error"></span>
           </div>
         </div>
       </fieldset>
-      <fieldset class="feelings-fieldset section-wrapper">
-        <h2 class="title form__title">Опишите свои эмоции:</h2>
+      <fieldset class="impression fieldset">
+        <div class="impression__title fieldset__title">
+          <span>Ваше общее впечатление:</span>
+        </div>
+        <div class="impression__field-wrapper">
+          <input type="radio" id="impression1" name="impression" value="1" checked />
+          <label class="impression__label" for="impression1">Скорее положительное</label>
+        </div>
+        <div class="impression__field-wrapper">
+          <input type="radio" id="impression2" name="impression" value="2" />
+          <label class="impression__label" for="impression2">Скорее отрицательное</label>
+        </div>
+        <div class="impression__field-wrapper">
+          <input type="radio" id="impression3" name="impression" value="3" />
+          <label class="impression__label" for="impression3">Затрудняюсь ответить</label>
+        </div>
+      </fieldset>
+      <fieldset class="attraction fieldset">
+        <div class="attraction__title fieldset__title fieldset__title--centred">
+          <span>Посещенные достопримечательности:</span>
+        </div>
+        <div class="attraction__fields">
+          <div class="attraction__field-wrapper">
+            <input id="attraction1" type="checkbox" name="attraction" value="1" checked />
+            <label class="attraction__lable" for="attraction1">Мост Дьявола</label>
+          </div>
+          <div class="attraction__field-wrapper">
+            <input id="attraction2" type="checkbox" name="attraction" value="2" checked />
+            <label class="attraction__lable" for="attraction2">Слайд-парк</label>
+          </div>
+          <div class="attraction__field-wrapper">
+            <input id="attraction3" type="checkbox" name="attraction" value="3"/>
+            <label class="attraction__lable" for="attraction3">Гора-Колокол</label>
+          </div>
+          <div class="attraction__field-wrapper">
+            <input id="attraction4" type="checkbox" name="attraction" value="4" checked />
+            <label class="attraction__lable" for="attraction4">Красные скалы</label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="feelings fieldset">
+        <div class="attraction__title fieldset__title fieldset__title--centred">
+          <span>Опишите свои эмоции:</span>
+        </div>
         <textarea placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
-      <input class="button button--submit" type="submit" value="ОТПРАВИТЬ ОТЗЫВ" />
+      <div class="submit fieldset">
+        <input class="button submit__button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ" />
+        <span class="submit__required-note">* — обязательные поля</span>
+      </div>
     </form>
   </div>
   <footer class="page-footer">

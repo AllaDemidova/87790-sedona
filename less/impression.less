@@ -1,0 +1,48 @@
+.impression{
+  @media @tablet-width{
+    flex-basis: 50%;
+    margin: 0 0 70px 0;
+  }
+
+  @media @tablet-width{
+    border-right: 1px solid @gray-border-right;
+    order: -1;
+  }
+  @media @desktop-width {
+    padding-right: 80px;
+
+  }
+
+  &__title{
+    @media @mobile-width {
+      margin:0 0 30px 0;
+    }
+    @media @tablet-width {
+      margin:0 0 65px 0;
+    }
+    @media @desktop-width {
+      text-align: center;
+    }
+  }
+  &__field-wrapper:not(:last-child){
+    margin: 0 0 15px 0;
+  }
+  &__label{
+    .bold-label();
+
+    &:before{
+      .inline-middle();
+      width: 22px;
+      height: 22px;
+      content: "";
+      border: 17px solid @gray-background;
+      border-radius: 50%;
+      background: @gray-background;
+      margin: 0 20px 0 2px;
+    }
+  }
+
+  input:checked + label:before{
+    background-color: @black-color;
+  }
+}
