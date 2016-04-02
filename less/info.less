@@ -7,6 +7,7 @@
   @media @tablet-width{
     justify-content: space-between;
   }
+
   &__block{
     @media @mobile-width {
       position: relative;
@@ -14,6 +15,7 @@
       margin: 0 0 25px 0;
       padding: 0 0 0 50px;
     }
+
     @media @tablet-width{
       width: 170px;
 
@@ -21,12 +23,9 @@
         order: 1;
       }
     }
+
     @media @desktop-width {
       width: 270px;
-
-      &:not(:last-child){
-        margin: 0 130px 0 0;
-      }
     }
 
     &:before{
@@ -83,13 +82,14 @@
         }
       }
     }
-
   }
+
   &__title{
     @media @mobile-width {
       margin: 0 0 25px;
     }
   }
+
   &__description{
     margin: 0;
   }

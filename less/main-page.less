@@ -26,9 +26,23 @@
   &__reasons-wrapper{
     @media @tablet-width{
       .clearfix();
+      overflow: hidden;
+      height: 256px;
     }
-    img{
-      display: block;
+  }
+
+  &__image{
+    @media @mobile-width {
+      width: 100%;
+      height: 260px;
+    }
+
+    @media @tablet-width {
+      width: 511px;
+    }
+
+    @media @desktop-width {
+      width: 800px;
     }
   }
 }

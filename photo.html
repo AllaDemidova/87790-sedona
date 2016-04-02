@@ -25,8 +25,7 @@
     </header>
   </header>
   <div class="main-container photo-page">
-    <div class="panorama panorama--mini">
-    </div>
+    <div class="panorama panorama--mini"></div>
     <div class="introduction">
       <section class="section-wrapper">
         <h2 class="title">Фото и видео</h2>
@@ -35,7 +34,12 @@
     </div>
     <section class="photo-list">
       <div class="photo-list__photo-block">
-        <img class="photo-list__photo" width="100%" height="280" src="/img/photo-1-mobile.jpg" alt="" />
+        <picture>
+          <source media="(min-width: 1200px)" srcset="/img/photo-1-desktop.jpg 1x, /img/photo-1-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="/img/photo-1-tablet.jpg 1x, /img/photo-1-tablet@2x.jpg 2x">
+          <img class="photo-list__photo" src="/img/photo-1-mobile.jpg" srcset="/img/photo-1-mobile@2x.jpg 2x"
+               alt="Неродные просторы" />
+        </picture>
         <div class="photo-list__note-wrapper">
           <div>
             <p class="photo-list__photo-title">неродные просторы</p>
@@ -45,7 +49,12 @@
         </div>
       </div>
       <div class="photo-list__photo-block">
-        <img class="photo-list__photo" width="100%" height="280" src="/img/photo-2-mobile.jpg" alt="" />
+        <picture>
+          <source media="(min-width: 1200px)" srcset="/img/photo-2-desktop.jpg 1x, /img/photo-2-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="/img/photo-2-tablet.jpg 1x, /img/photo-2-tablet@2x.jpg 2x">
+          <img class="photo-list__photo" src="/img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"
+               alt="Местная растительность" />
+        </picture>
         <div class="photo-list__note-wrapper">
           <div>
             <p class="photo-list__photo-title">Местная растительность</p>
@@ -55,24 +64,34 @@
         </div>
       </div>
       <div class="photo-list__photo-block">
-          <img class="photo-list__photo" width="100%" height="280" src="/img/photo-3-mobile.jpg" alt="" />
-          <div class="photo-list__note-wrapper">
-            <div>
-              <p class="photo-list__photo-title">Дорога на север</p>
-              <p class="photo-list__photo-author">Автор фото: Петр</p>
-            </div>
-            <span class="photo-list__photo-vote">96</span>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="/img/photo-3-desktop.jpg 1x, /img/photo-3-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="/img/photo-3-tablet.jpg 1x, /img/photo-3-tablet@2x.jpg 2x">
+          <img class="photo-list__photo" src="/img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"
+               alt="Дорога на север" />
+        </picture>
+        <div class="photo-list__note-wrapper">
+          <div>
+            <p class="photo-list__photo-title">Дорога на север</p>
+            <p class="photo-list__photo-author">Автор фото: Петр</p>
           </div>
+          <span class="photo-list__photo-vote">96</span>
+        </div>
       </div>
       <div class="photo-list__photo-block">
-          <img class="photo-list__photo" width="100%" height="280" src="/img/photo-4-mobile.jpg" alt="" />
-          <div class="photo-list__note-wrapper">
-            <div>
-              <p class="photo-list__photo-title">Мост дьявола</p>
-              <p class="photo-list__photo-author">Автор фото: Антон</p>
-            </div>
-            <span class="photo-list__photo-vote">254</span>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="/img/photo-4-desktop.jpg 1x, /img/photo-4-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="/img/photo-4-tablet.jpg 1x, /img/photo-4-tablet@2x.jpg 2x">
+          <img class="photo-list__photo" src="/img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"
+               alt="Мост дьявола" />
+        </picture>
+        <div class="photo-list__note-wrapper">
+          <div>
+            <p class="photo-list__photo-title">Мост дьявола</p>
+            <p class="photo-list__photo-author">Автор фото: Антон</p>
           </div>
+          <span class="photo-list__photo-vote">254</span>
+        </div>
       </div>
     </section>
     <section class="photo-page__info">
