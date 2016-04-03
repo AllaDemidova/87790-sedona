@@ -8,8 +8,36 @@
     margin-bottom: 80px;
   }
 
-  &__video{
-    display: block;
+  &__video-poster{
+    width: 100%;
+    background-size: cover;
+
+    @media @mobile-width {
+      height: 201px;
+      background-image:url("@{imagesPath}video-mobile.jpg");
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+        background-image:url("@{imagesPath}video-mobile@2x.jpg");
+      }
+    }
+
+    @media @tablet-width {
+      height: 499px;
+      background-image:url('@{imagesPath}video-tablet.jpg');
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+        background-image:url('@{imagesPath}video-tablet@2x.jpg');
+      }
+    }
+
+    @media @desktop-width {
+      height: 500px;
+      background-image:url('@{imagesPath}video-desktop.jpg');
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+        background-image:url('@{imagesPath}video-desktop@2x.jpg');
+      }
+    }
   }
 
   &__controls{
