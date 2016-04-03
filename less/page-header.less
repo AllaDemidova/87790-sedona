@@ -32,6 +32,7 @@
   &__nav-item {
     display: block;
     text-align: center;
+
     @media @mobile-width {
       border-top: 1px solid #9ac2db;
       border-bottom: 1px solid #678fa8;
@@ -79,6 +80,21 @@
       }
       @media @tablet-width{
         color: @black-color;
+      }
+    }
+
+    &--current{
+      @media @tablet-width {
+        a{
+          color: @current-link;
+        }
+
+        &:hover a{
+          color: @current-link-hover;
+        }
+        &:active a{
+          color: @current-link-active;
+        }
       }
     }
   }

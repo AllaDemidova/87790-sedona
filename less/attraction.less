@@ -64,7 +64,7 @@
     }
 
     &:active:before{
-      background-color: @link-pressed;
+      background-color: @link-active;
     }
   }
 
@@ -72,9 +72,5 @@
   input:checked + label:before{
     background-image: url("@{imagesPath}icon-tick.svg");
     background-size: 24px 17px;
-  }
-
-  input:checked + label:active:before{
-    //background-position: 0 -17px;
   }
 }

@@ -2,6 +2,47 @@
   &__wrapper {
     .main-width();
   }
+
+  &__copyright{
+    @media @mobile-width {
+      .inline-middle();
+      margin: 40px 0 0 0;
+    }
+
+    @media @tablet-width {
+      .inline-middle();
+      margin: 0 0 0 122px;
+    }
+
+    @media @desktop-width {
+      margin: 0 0 0 350px;
+    }
+  }
+
+  &__htmlacademy{
+    .inline-middle();
+    width: 27px;
+    height: 34px;
+    content: "";
+    margin: 0 0 0 10px;
+
+    @media @mobile-width {
+      margin-top: 40px;
+    }
+
+    path{
+      fill: @black-color;
+    }
+
+    &:hover path{
+      cursor: pointer;
+      fill: @blue-color;
+    }
+
+    &:active path{
+      fill: @gray-svg-color;
+    }
+  }
 }
 
 @media @mobile-width {
@@ -15,10 +56,6 @@
       margin: 0 0 40px 0;
     }
 
-    &__copyright {
-      display: block;
-      margin: 40px 0 0 0;
-    }
   }
 }
 
@@ -32,10 +69,6 @@
       .inline-middle();
       margin: 0 112px 0 20px;
     }
-    &__copyright{
-      .inline-middle();
-      margin: 0 0 0 122px;
-    }
   }
 }
 
@@ -45,12 +78,6 @@
       .inline-middle();
       margin: 0 255px 0 90px;
     }
-    &__copyright{
-      .inline-middle();
-      margin: 0 0 0 350px;
-    }
-
   }
-
 }
 

@@ -40,16 +40,11 @@
   &__replay{
     align-self: center;
     display: block;
-    background: url("@{imagesPath}icon-video-replay.svg") no-repeat;
     flex: 0 0 16px;
     height: 20px;
-    .video-buttons-color(@video-button-mobile, @video-button-mobile-hover, @video-button-mobile-active);
 
     @media @mobile-width {
       margin-right: auto;
-    }
-    @media @tablet-width {
-      fill: @white-color;
     }
   }
 
@@ -102,28 +97,20 @@
   &__close-cpation{
     display: block;
     align-self: center;
-    background: url("@{imagesPath}icon-video-subtitles.svg") no-repeat;
     flex: 0 0 32px;
     height: 20px;
-    .video-buttons-color(@video-button-mobile, @video-button-mobile-hover, @video-button-mobile-active);
-
-    @media @tablet-width {
-      fill: @white-color;
-    }
   }
 
   &__full-screen{
     display: block;
     align-self: center;
-    background: url("@{imagesPath}icon-video-fullscreen.svg") no-repeat;
     flex: 0 0 20px;
     height: 20px;
     margin: 0 0 0 30px;
-    .video-buttons-color(@video-button-mobile, @video-button-mobile-hover, @video-button-mobile-active);
+  }
 
-    @media @tablet-width {
-      fill: @white-color;
-    }
+  &__icon{
+    .video-buttons-color();
   }
 }
 

@@ -94,15 +94,25 @@
   }
 }
 
-.video-buttons-color(@state, @hover, @active){
-  fill: @state;
+.video-buttons-color(){
+  @media @mobile-width {
+    fill: @video-button-mobile;
 
-  &:hover{
-    fill: @hover;
-    cursor: pointer;
+    &:hover{
+      fill: @video-button-mobile-hover;
+      cursor: pointer;
+    }
+
+    &:active{
+      fill: @video-button-mobile-active;
+    }
   }
 
-  &:active{
-    fill: @active;
+  @media @tablet-width {
+    fill: @white-color;
+
+    &:hover{
+      cursor: pointer;
+    }
   }
 }
