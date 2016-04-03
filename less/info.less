@@ -1,14 +1,16 @@
-.info{
+.info {
   display: flex;
+
   @media @mobile-width {
     flex-direction: column;
     padding: 15px 0;
   }
-  @media @tablet-width{
+
+  @media @tablet-width {
     justify-content: space-between;
   }
 
-  &__block{
+  &__block {
     @media @mobile-width {
       position: relative;
       text-align: left;
@@ -16,10 +18,10 @@
       padding: 0 0 0 50px;
     }
 
-    @media @tablet-width{
+    @media @tablet-width {
       width: 170px;
 
-      &:nth-child(1){
+      &:nth-child(1) {
         order: 1;
       }
     }
@@ -28,14 +30,14 @@
       width: 270px;
     }
 
-    &:before{
+    &:before {
       display: block;
       content: "";
 
-      @media  @mobile-width{
+      @media @mobile-width {
         position: absolute;
         top: -10px;
-        left:0;
+        left: 0;
       }
 
       @media @tablet-width {
@@ -43,8 +45,8 @@
       }
     }
 
-    &--gift{
-      &:before{
+    &--gift {
+      &:before {
         background: url("@{imagesPath}icon-gift.svg") no-repeat;
         @media @mobile-width {
           width: 38px;
@@ -58,8 +60,8 @@
       }
     }
 
-    &--burger{
-      &:before{
+    &--burger {
+      &:before {
         background: url("@{imagesPath}icon-burger.svg") no-repeat;
         @media @mobile-width {
           width: 40px;
@@ -73,8 +75,8 @@
       }
     }
 
-    &--house{
-      &:before{
+    &--house {
+      &:before {
         background: url("@{imagesPath}icon-house.svg") no-repeat;
 
         @media @mobile-width {
@@ -92,13 +94,13 @@
     }
   }
 
-  &__title{
+  &__title {
     @media @mobile-width {
       margin: 0 0 25px;
     }
   }
 
-  &__description{
+  &__description {
     margin: 0;
   }
 }

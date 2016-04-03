@@ -6,11 +6,11 @@
       text-align: right;
     }
 
-    @media @tablet-width{
-      padding:0 25px 0 50px;
+    @media @tablet-width {
+      padding: 0 25px 0 50px;
     }
-    @media @desktop-width{
-      padding:0 70px 0 90px;
+    @media @desktop-width {
+      padding: 0 70px 0 90px;
     }
   }
 
@@ -21,7 +21,7 @@
       background: @blue-color;
     }
 
-    @media @tablet-width{
+    @media @tablet-width {
       height: 56px;
       background: @white-color;
       color: @black-color;
@@ -38,35 +38,38 @@
       border-bottom: 1px solid #678fa8;
       .button-states();
 
-      &:last-child{
+      &:last-child {
         box-shadow: inset 0 -9px 12px -12px rgba(0, 0, 0, 0.5);
       }
     }
 
-    @media @tablet-width{
+    @media @tablet-width {
       height: 56px;
       float: left;
 
-      &:not(:last-child){
+      &:not(:last-child) {
         margin: 0 50px 0 0;
       }
-      &:first-child{
+
+      &:first-child {
         margin: 0 75px 0 0;
       }
 
-      &:hover a{
+      &:hover a {
         color: @blue-color;
       }
-      &:active a{
+
+      &:active a {
         color: @link-active;
       }
     }
 
     @media @desktop-width {
-      &:not(:last-child){
+      &:not(:last-child) {
         margin: 0 110px 0 0;
       }
-      &:first-child{
+
+      &:first-child {
         margin: 0 160px 0 0;
       }
     }
@@ -78,21 +81,22 @@
       @media @mobile-width {
         color: @white-color;
       }
-      @media @tablet-width{
+      @media @tablet-width {
         color: @black-color;
       }
     }
 
-    &--current{
+    &--current {
       @media @tablet-width {
-        a{
+        a {
           color: @current-link;
         }
 
-        &:hover a{
+        &:hover a {
           color: @current-link-hover;
         }
-        &:active a{
+
+        &:active a {
           color: @current-link-active;
         }
       }
@@ -104,7 +108,7 @@
     top: 17px;
     right: 19px;
 
-    @media @tablet-width{
+    @media @tablet-width {
       display: none;
     }
   }
@@ -119,25 +123,25 @@
       width: 102px;
       height: 84px;
       position: absolute;
-      bottom:-83px;
+      bottom: -83px;
       left: 50%;
       margin-left: -51px;
       background-image: url('@{imagesPath}logo-sedona-mobile.svg');
     }
-    @media @tablet-width{
+    @media @tablet-width {
       float: left;
-      margin:0 50px 0 0;
+      margin: 0 50px 0 0;
       background-image: url('@{imagesPath}logo-sedona-tablet.svg');
     }
     @media @desktop-width {
       width: 187px;
       height: 96px;
-      margin:0 110px 0 0;
+      margin: 0 110px 0 0;
       background-image: url('@{imagesPath}logo-sedona-desktop.svg');
     }
   }
 
-  &__logo-triangle{
+  &__logo-triangle {
     display: none;
 
     @media @desktop-width {
@@ -154,7 +158,7 @@
     margin: 20px;
     background: url('@{imagesPath}icon-menu.svg');
 
-    @media @tablet-width{
+    @media @tablet-width {
       display: none;
     }
   }

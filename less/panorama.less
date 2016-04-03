@@ -1,50 +1,50 @@
 .panorama {
   width: 100%;
-  background:@blue-color no-repeat;
+  background: @blue-color no-repeat;
   background-position: 0 bottom, center center;
 
   @media @mobile-width {
-    background-image:url("@{imagesPath}bg-intro-triangle-mobile.svg"),
-      url('@{imagesPath}bg-back-mobile.jpg');
+    background-image: url("@{imagesPath}bg-intro-triangle-mobile.svg"),
+    url('@{imagesPath}bg-back-mobile.jpg');
     background-size: 328px 27px, cover;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
-      background-image:url("@{imagesPath}bg-intro-triangle-mobile.svg"),
-        url('@{imagesPath}bg-back-mobile@2x.jpg');
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("@{imagesPath}bg-intro-triangle-mobile.svg"),
+      url('@{imagesPath}bg-back-mobile@2x.jpg');
     }
   }
 
   @media @tablet-width {
-    background-image:url('@{imagesPath}bg-intro-triangle-tablet.svg'),
+    background-image: url('@{imagesPath}bg-intro-triangle-tablet.svg'),
     url('@{imagesPath}bg-back-desktop.jpg');
     background-size: 768px, cover;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
-      background-image:url('@{imagesPath}bg-intro-triangle-tablet.svg'),
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url('@{imagesPath}bg-intro-triangle-tablet.svg'),
       url('@{imagesPath}bg-back-desktop@2x.jpg');
     }
   }
 
   @media @desktop-width {
-    background-image:url('@{imagesPath}bg-intro-triangle-desktop.svg'),
-      url('@{imagesPath}bg-back-desktop.jpg');
+    background-image: url('@{imagesPath}bg-intro-triangle-desktop.svg'),
+    url('@{imagesPath}bg-back-desktop.jpg');
     background-size: 1201px 57px, cover;
     background-position: -1px bottom, center center;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
-      background-image:url('@{imagesPath}bg-intro-triangle-desktop.svg'),
-        url('@{imagesPath}bg-back-desktop@2x.jpg');
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url('@{imagesPath}bg-intro-triangle-desktop.svg'),
+      url('@{imagesPath}bg-back-desktop@2x.jpg');
     }
   }
 
-  &__text{
+  &__text {
     margin: 0 auto;
 
     @media @mobile-width {
       padding: 90px 0 0;
       width: 280px;
 
-      svg{
+      svg {
         height: 210px;
       }
     }
@@ -59,17 +59,19 @@
       padding: 80px 0 0;
     }
 
-    svg{
+    svg {
       width: inherit;
     }
   }
+
   &--main {
     height: 389px;
     @media @tablet-width {
       height: 518px;
     }
   }
-  &--mini{
+
+  &--mini {
     @media @mobile-width {
       height: 160px;
     }

@@ -1,4 +1,4 @@
-.photo-list{
+.photo-list {
   display: flex;
   flex-wrap: wrap;
 
@@ -13,12 +13,12 @@
     color: @white-color;
   }
 
-  &__photo-block{
-    @media @mobile-width{
+  &__photo-block {
+    @media @mobile-width {
       padding: 23px 20px;
       border-top: 1px solid @gray-color;
 
-      &:last-of-type{
+      &:last-of-type {
         border-bottom: 1px solid @gray-color;
       }
     }
@@ -26,37 +26,41 @@
       position: relative;
       padding: 0;
 
-      &:first-child{
+      &:first-child {
         width: 648px;
       }
-      &:not(:first-child){
+
+      &:not(:first-child) {
         width: 324px;
       }
-      &:nth-last-child(2) .photo-list__note-wrapper{
+
+      &:nth-last-child(2) .photo-list__note-wrapper {
         background: @gray-photo-note;
       }
     }
     @media @desktop-width {
-      &:first-child{
+      &:first-child {
         width: 1200px;
       }
-      &:not(:first-child){
+
+      &:not(:first-child) {
         width: 400px;
       }
-      &:nth-last-child(2) .photo-list__note-wrapper{
+
+      &:nth-last-child(2) .photo-list__note-wrapper {
         background: rgba(15, 8, 9, 0.4);
       }
     }
   }
 
-  &__photo{
+  &__photo {
     display: block;
-    @media @mobile-width{
+    @media @mobile-width {
       margin: 0 0 20px;
     }
   }
 
-  &__note-wrapper{
+  &__note-wrapper {
     display: flex;
 
     @media @mobile-width {
@@ -65,7 +69,7 @@
 
     @media @tablet-width {
       justify-content: space-between;
-      padding:15px 20px;
+      padding: 15px 20px;
       background: @gray-background;
     }
 
@@ -78,12 +82,12 @@
     }
   }
 
-  &__photo-title{
+  &__photo-title {
     font-family: "PT Sans Bold";
     margin: 0 0 12px;
   }
 
-  &__photo-author{
+  &__photo-author {
     color: #333333;
     margin: 0 0 10px;
 
@@ -95,9 +99,9 @@
     }
   }
 
-  &__photo-vote{
+  &__photo-vote {
     font-family: "PT Sans Bold";
-    &:before{
+    &:before {
       display: inline-block;
       vertical-align: bottom;
       content: "";

@@ -1,4 +1,4 @@
-.fieldset{
+.fieldset {
   .border-none();
   margin: 0;
   box-sizing: border-box;
@@ -8,14 +8,16 @@
     padding: 25px 20px 30px;
     flex-basis: 100%;
   }
+
   @media @tablet-width {
     padding: 0 60px;
   }
+
   @media @desktop-width {
     padding: 0 30px;
   }
 
-  &__title{
+  &__title {
     .font-bold();
     @media @mobile-width {
       text-align: center;
@@ -23,12 +25,12 @@
     }
   }
 
-  &__title--centred{
+  &__title--centred {
     @media @tablet-width {
       text-align: center;
       position: relative;
 
-      &:before{
+      &:before {
         display: block;
         content: "";
         border: 1px solid @gray-border;
@@ -38,7 +40,7 @@
         left: 0;
       }
 
-      span{
+      span {
         display: inline-block;
         box-sizing: border-box;
         max-width: 400px;

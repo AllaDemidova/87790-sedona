@@ -1,11 +1,11 @@
-.attraction{
+.attraction {
   flex-basis: 100%;
 
   @media @tablet-width {
     margin: 0 0 70px 0;
   }
 
-  &__fields{
+  &__fields {
     display: flex;
 
     @media @mobile-width {
@@ -23,32 +23,34 @@
     }
   }
 
-  &__title{
+  &__title {
     margin-bottom: 50px;
   }
 
-  &__field-wrapper{
-    @media @tablet-width{
-      &:last-child{
+  &__field-wrapper {
+    @media @tablet-width {
+      &:last-child {
         order: 3;
       }
-      &:nth-last-child(1){
-        order:1;
+
+      &:nth-last-child(1) {
+        order: 1;
       }
-      &:nth-of-type(1){
+
+      &:nth-of-type(1) {
         order: 2;
       }
     }
 
-    &:not(:last-child){
+    &:not(:last-child) {
       margin: 0 0 35px 0;
     }
   }
 
-  &__lable{
+  &__lable {
     .bold-label();
 
-    &:before{
+    &:before {
       .inline-middle();
       width: 60px;
       height: 60px;
@@ -58,18 +60,17 @@
       margin: 0 25px 0 0;
     }
 
-    &:hover:before{
+    &:hover:before {
       cursor: pointer;
       background-color: @button-disabled;
     }
 
-    &:active:before{
+    &:active:before {
       background-color: @link-active;
     }
   }
 
-
-  input:checked + label:before{
+  input:checked + label:before {
     background-image: url("@{imagesPath}icon-tick.svg");
     background-size: 24px 17px;
   }
