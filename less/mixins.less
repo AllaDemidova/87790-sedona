@@ -93,3 +93,31 @@
     background: @button-presed;
   }
 }
+
+.video-buttons-color(){
+  @media @mobile-width {
+    fill: @video-button-mobile;
+
+    &:hover{
+      fill: @video-button-mobile-hover;
+      cursor: pointer;
+    }
+
+    &:active{
+      fill: @video-button-mobile-active;
+    }
+  }
+
+  @media @tablet-width {
+    fill: @white-color;
+
+    &:hover{
+      cursor: pointer;
+      fill: @video-button-hover;
+    }
+
+    &:active{
+      fill: @video-button-active;
+    }
+  }
+}

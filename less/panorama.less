@@ -1,34 +1,77 @@
 .panorama {
   width: 100%;
-  background: url('@{imagesPath}bg-back-mobile.jpg') no-repeat;
-  background-size: cover;
+  background: @blue-color no-repeat;
+  background-position: 0 bottom, center center;
 
-  &:after{
-    //background: url("@{imagesPath}bg-triangle.svg");
+  @media @mobile-width {
+    background-image: url("@{imagesPath}bg-intro-triangle-mobile.svg"),
+    url('@{imagesPath}bg-back-mobile.jpg');
+    background-size: 328px 27px, cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("@{imagesPath}bg-intro-triangle-mobile.svg"),
+      url('@{imagesPath}bg-back-mobile@2x.jpg');
+    }
   }
 
-  &__text{
+  @media @tablet-width {
+    background-image: url('@{imagesPath}bg-intro-triangle-tablet.svg'),
+    url('@{imagesPath}bg-back-desktop.jpg');
+    background-size: 768px, cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url('@{imagesPath}bg-intro-triangle-tablet.svg'),
+      url('@{imagesPath}bg-back-desktop@2x.jpg');
+    }
+  }
+
+  @media @desktop-width {
+    background-image: url('@{imagesPath}bg-intro-triangle-desktop.svg'),
+    url('@{imagesPath}bg-back-desktop.jpg');
+    background-size: 1201px 57px, cover;
+    background-position: -1px bottom, center center;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url('@{imagesPath}bg-intro-triangle-desktop.svg'),
+      url('@{imagesPath}bg-back-desktop@2x.jpg');
+    }
+  }
+
+  &__text {
     margin: 0 auto;
-    background: url('@{imagesPath}text-sedona-index.svg') no-repeat;
+
+    @media @mobile-width {
+      padding: 90px 0 0;
+      width: 280px;
+
+      svg {
+        height: 210px;
+      }
+    }
 
     @media @tablet-width {
       width: 460px;
       height: 351px;
-      background-position: center 75px;
+      padding: 75px 0 0;
     }
 
     @media @desktop-width {
-      background-position: center 80px;
+      padding: 80px 0 0;
+    }
+
+    svg {
+      width: inherit;
     }
   }
+
   &--main {
     height: 389px;
-    background-position: center center;
     @media @tablet-width {
       height: 518px;
     }
   }
-  &--mini{
+
+  &--mini {
     @media @mobile-width {
       height: 160px;
     }

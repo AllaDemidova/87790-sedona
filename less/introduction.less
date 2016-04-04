@@ -4,30 +4,12 @@
   background: #ffffff;
   text-align: center;
 
-  &:before {
-    display: block;
-    content: "";
-    @media @mobile-width {
-      position: absolute;
-      top: -27px;
-      width: 320px;
-      height: 26px;
-      background: url("@{imagesPath}bg-intro-triangle-mobile.svg") center center no-repeat;
-    }
-    @media @tablet-width {
-      width: 768px;
-    }
-    @media @desktop-width {
-      width: 1200px;
-    }
+  @media @tablet-width {
+    margin: 0 auto;
+    width: 700px;
   }
 
-  @media @tablet-width{
-    margin: -25px auto 0;
-    width:700px;
-  }
-
-  p{
+  p {
     margin: 0;
   }
 }

@@ -7,28 +7,31 @@
   @media @tablet-width {
 
   }
-  &__item{
+
+  &__item {
     box-sizing: border-box;
   }
+
   &__item--primary {
     @media @mobile-width {
       padding: 20px 0;
     }
     @media @tablet-width {
       width: 257px;
-      padding: 15px 0;
+      height: 256px;
+      //padding: 15px 0;
     }
     @media @desktop-width {
       width: 400px;
-      padding: 20px 0;
-     // height: 256px;
+      //padding: 20px 0;
     }
   }
-  &__item--secondary{
+
+  &__item--secondary {
     @media @mobile-width {
       padding: 35px 0;
 
-      &:not(:last-child){
+      &:not(:last-child) {
         border-bottom: 1px solid @gray-border;
       }
     }
@@ -40,8 +43,8 @@
     }
   }
 
-  &__header{
-    @media @mobile-width{
+  &__header {
+    @media @mobile-width {
       margin: 0 0 25px;
     }
     @media @tablet-width {
@@ -49,57 +52,52 @@
       width: 120px;
     }
   }
-  &__title{
+
+  &__title {
     margin: 0 0 17px;
   }
-  p{
-    margin: 0;
-  }
 
-  /*img:after{
-    display: block;
-    .clearfix();
-  }*/
-}
-.reasons--primary {
-  background: @blue-color;
-  color: #ffffff;
-
-  @media @tablet-width {
-    float: right;
-  }
-}
-.reasons--secondary {
-  background: @gray-color;
-
-  @media @mobile-width {
-    padding: 0 20px;
-  }
-
-  @media @tablet-width {
-    justify-content: space-between;
-    padding: 50px;
-  }
-  @media @desktop-width {
-    padding: 50px 70px;
-
-  }
-}
-.reasons--triangle {
-  @media @mobile-width {
-    &:before {
-      display:block;
-      width: 320px;
-      height: 37px;
-      position: absolute;
-      top: -37px;
-      padding: 0 0 10px 0;
-      content: "";
-      background: url("@{imagesPath}bg-triangle.svg") center center no-repeat;
-      background-size: cover;
+  &__triangle {
+    @media @tablet-width {
+      display: none;
     }
   }
-  @media @tablet-width {
-    float: left;
+
+  &--primary {
+    background: @blue-color;
+    color: #ffffff;
+
+    @media @tablet-width {
+      float: right;
+    }
+  }
+
+  &--primary-left {
+    @media @tablet-width {
+      float: left;
+    }
+  }
+
+  &--secondary {
+    background: @gray-color;
+
+    @media @mobile-width {
+      padding: 0 20px;
+    }
+
+    @media @tablet-width {
+      justify-content: space-between;
+      padding: 50px;
+    }
+    @media @desktop-width {
+      padding: 50px 70px;
+
+    }
+  }
+
+  p {
+    margin: 0;
   }
 }
+
+

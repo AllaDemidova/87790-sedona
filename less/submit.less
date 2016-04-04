@@ -1,17 +1,18 @@
-.submit{
+.submit {
   display: flex;
   flex-basis: 100%;
   justify-content: space-between;
-  margin-bottom:35px;
+  margin-bottom: 35px;
 
   @media @tablet-width {
     width: 708px;
   }
+
   @media @desktop-width {
     width: 1140px;
   }
 
-  &__button{
+  &__button {
     @media @mobile-width {
       margin-left: auto;
     }
@@ -24,10 +25,10 @@
     }
   }
 
-  &__required-note{
+  &__required-note {
     .label();
     align-self: center;
-    @media @mobile-width{
+    @media @mobile-width {
       display: none;
     }
   }

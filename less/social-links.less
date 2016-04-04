@@ -1,15 +1,31 @@
-.social-links{
-  &__icon{
-    display: inline-block;
-    height: 18px;
-    width: 20px;
-    padding: 15px;
-
-    .button-states();
-  }
-}
-@media @tablet-width {
-  .social-links{
+.social-links {
+  @media @tablet-width {
     .inline-middle();
   }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+
+    .button-states();
+    &:active {
+      svg {
+        fill-opacity: 0.6;
+      }
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    fill: @white-color;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
 }
+

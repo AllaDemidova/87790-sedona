@@ -3,137 +3,167 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
   <title>HTML Academy: Седона</title>
 </head>
 <body>
+<header class="page-header">
   <header class="page-header">
-    <header class="page-header">
-      <div class="page-header__wrapper">
-        <nav class="page-header__nav">
-          <ul class="page-header__nav-list">
-            <li class="page-header__nav-item"><a href="/">Главная</a></li>
-            <li class="page-header__nav-item"><a href="/photo.html">фото и видео</a></li>
-            <li><a href="/" class="page-header__logo"></a></li>
-            <li class="page-header__nav-item"><a href="/form.html">Форма отзыва</a></li>
-            <li class="page-header__nav-item"><a href="https://htmlacademy.ru/">HTML academy</a></li>
-          </ul>
-          <span class="close-btn page-header__close-btn"></span>
-        </nav>
-        <span class="page-header__toggle-btn"></span>
-      </div>
-    </header>
+    <div class="page-header__wrapper">
+      <nav class="page-header__nav">
+        <ul class="page-header__nav-list">
+          <li class="page-header__nav-item"><a href="/">Главная</a></li>
+          <li class="page-header__nav-item"><a href="/photo.html">фото и видео</a></li>
+          <li><a href="/" class="page-header__logo"></a></li>
+          <li class="page-header__nav-item page-header__nav-item--current"><a href="/form.html">Форма отзыва</a></li>
+          <li class="page-header__nav-item"><a href="https://htmlacademy.ru/">HTML academy</a></li>
+        </ul>
+        <span class="close-btn page-header__close-btn"></span>
+      </nav>
+      <span class="page-header__toggle-btn"></span>
+    </div>
   </header>
-  <div class="main-container">
-    <div class="panorama panorama--mini">
-    </div>
-    <div class="introduction">
-      <section class="section-wrapper">
-        <h2 class="title">Оставьте свой отзыв</h2>
-        <p> Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а так же о посещённых достопримечательностях</p>
-      </section>
-    </div>
-    <form class="form">
-      <fieldset class="personal-data fieldset">
-        <div class="personal-data__title fieldset__title">
-          <span>Представьтесь, пожалуйста:</span>
-        </div>
-        <div class="personal-data__field-wrapper">
-          <label class="personal-data__label" for="first-name">ИМЯ:</label>
-          <input class="personal-data__input" type="text" id="first-name" name="first-name" value="Петр" />
-        </div>
-        <div class="personal-data__field-wrapper">
-          <label class="personal-data__label" for="last-name">фАМИЛИЯ:</label>
-          <input class="personal-data__input" type="text" id="last-name" name="last-name" value="Иванов" />
-        </div>
-        <div class="personal-data__field-wrapper">
-          <label class="personal-data__label" for="patronymic">ОТЧЕСТВО:</label>
-          <input class="personal-data__input" type="text" id="patronymic" name="patronymic" value="Александрович" />
-        </div>
-      </fieldset>
-      <fieldset class="contacts fieldset">
-        <div class="contacts__title fieldset__title fieldset__title--centred">
-          <span>Контактная информация:</span>
-        </div>
-        <div class="contacts__fields">
-          <div class="contacts__field-wrapper">
-            <label class="contacts__label" for="phone">Контактный телефон:</label>
-            <d.iv class="contacts__input-control contacts__input-control--phone">
-              <input class="contacts__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" />
-            </d.iv>
-            <span class="validation-error contacts__error">Ошибка, перепроверьте номер</span>
-          </div>
-          <div class="contacts__field-wrapper">
-            <label class="contacts__label" for="email">Электронная почта:</label>
-            <div class="contacts__input-control contacts__input-control--mail">
-              <input class="contacts__input" type="tel" id="email" name="email" placeholder="Введите e-mail" />
-            </div>
-            <span class="validation-error contacts__error"></span>
-          </div>
-        </div>
-      </fieldset>
-      <fieldset class="impression fieldset">
-        <div class="impression__title fieldset__title">
-          <span>Ваше общее впечатление:</span>
-        </div>
-        <div class="impression__field-wrapper">
-          <input type="radio" id="impression1" name="impression" value="1" checked />
-          <label class="impression__label" for="impression1">Скорее положительное</label>
-        </div>
-        <div class="impression__field-wrapper">
-          <input type="radio" id="impression2" name="impression" value="2" />
-          <label class="impression__label" for="impression2">Скорее отрицательное</label>
-        </div>
-        <div class="impression__field-wrapper">
-          <input type="radio" id="impression3" name="impression" value="3" />
-          <label class="impression__label" for="impression3">Затрудняюсь ответить</label>
-        </div>
-      </fieldset>
-      <fieldset class="attraction fieldset">
-        <div class="attraction__title fieldset__title fieldset__title--centred">
-          <span>Посещенные достопримечательности:</span>
-        </div>
-        <div class="attraction__fields">
-          <div class="attraction__field-wrapper">
-            <input id="attraction1" type="checkbox" name="attraction" value="1" checked />
-            <label class="attraction__lable" for="attraction1">Мост Дьявола</label>
-          </div>
-          <div class="attraction__field-wrapper">
-            <input id="attraction2" type="checkbox" name="attraction" value="2" checked />
-            <label class="attraction__lable" for="attraction2">Слайд-парк</label>
-          </div>
-          <div class="attraction__field-wrapper">
-            <input id="attraction3" type="checkbox" name="attraction" value="3"/>
-            <label class="attraction__lable" for="attraction3">Гора-Колокол</label>
-          </div>
-          <div class="attraction__field-wrapper">
-            <input id="attraction4" type="checkbox" name="attraction" value="4" checked />
-            <label class="attraction__lable" for="attraction4">Красные скалы</label>
-          </div>
-        </div>
-      </fieldset>
-      <fieldset class="feelings fieldset">
-        <div class="attraction__title fieldset__title fieldset__title--centred">
-          <span>Опишите свои эмоции:</span>
-        </div>
-        <textarea placeholder="Опишите подробно все свои восторги"></textarea>
-      </fieldset>
-      <div class="submit fieldset">
-        <input class="button submit__button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ" />
-        <span class="submit__required-note">* — обязательные поля</span>
-      </div>
-    </form>
+</header>
+<div class="main-container">
+  <div class="panorama panorama--mini">
   </div>
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <p class="page-footer__note title">#visitSEDONA</p>
-      <div class="social-links">
-        <a href="#" class="social-links__icon social-links__icon--vk">vk</a>
-        <a href="#" class="social-links__icon social-links__icon--facebook">fb</a>
-        <a href="#" class="social-links__icon social-links__icon--youtube">yt</a>
+  <div class="introduction">
+    <section class="section-wrapper">
+      <h2 class="title">Оставьте свой отзыв</h2>
+      <p> Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а так же о посещённых достопримечательностях</p>
+    </section>
+  </div>
+  <form class="form">
+    <fieldset class="personal-data fieldset">
+      <div class="personal-data__title fieldset__title">
+        <span>Представьтесь, пожалуйста:</span>
       </div>
-      <a class="page-footer__copyright">Разработано</a>
+      <div class="personal-data__field-wrapper">
+        <label class="personal-data__label" for="first-name">ИМЯ:</label>
+        <input class="personal-data__input" type="text" id="first-name" name="first-name" value="Петр"/>
+      </div>
+      <div class="personal-data__field-wrapper">
+        <label class="personal-data__label" for="last-name">фАМИЛИЯ:</label>
+        <input class="personal-data__input" type="text" id="last-name" name="last-name" value="Иванов"/>
+      </div>
+      <div class="personal-data__field-wrapper">
+        <label class="personal-data__label" for="patronymic">ОТЧЕСТВО:</label>
+        <input class="personal-data__input" type="text" id="patronymic" name="patronymic" value="Александрович"/>
+      </div>
+    </fieldset>
+    <fieldset class="contacts fieldset">
+      <div class="contacts__title fieldset__title fieldset__title--centred">
+        <span>Контактная информация:</span>
+      </div>
+      <div class="contacts__fields">
+        <div class="contacts__field-wrapper">
+          <label class="contacts__label" for="phone">Контактный телефон:</label>
+          <d.iv class="contacts__input-control contacts__input-control--phone">
+            <input class="contacts__input" type="tel" id="phone" name="phone" placeholder="Введите телефон"/>
+          </d.iv>
+          <span class="validation-error contacts__error">Ошибка, перепроверьте номер</span>
+        </div>
+        <div class="contacts__field-wrapper">
+          <label class="contacts__label" for="email">Электронная почта:</label>
+          <div class="contacts__input-control contacts__input-control--mail">
+            <input class="contacts__input" type="tel" id="email" name="email" placeholder="Введите e-mail"/>
+          </div>
+          <span class="validation-error contacts__error"></span>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="impression fieldset">
+      <div class="impression__title fieldset__title">
+        <span>Ваше общее впечатление:</span>
+      </div>
+      <div class="impression__field-wrapper">
+        <input type="radio" id="impression1" name="impression" value="1" checked/>
+        <label class="impression__label" for="impression1">Скорее положительное</label>
+      </div>
+      <div class="impression__field-wrapper">
+        <input type="radio" id="impression2" name="impression" value="2"/>
+        <label class="impression__label" for="impression2">Скорее отрицательное</label>
+      </div>
+      <div class="impression__field-wrapper">
+        <input type="radio" id="impression3" name="impression" value="3"/>
+        <label class="impression__label" for="impression3">Затрудняюсь ответить</label>
+      </div>
+    </fieldset>
+    <fieldset class="attraction fieldset">
+      <div class="attraction__title fieldset__title fieldset__title--centred">
+        <span>Посещенные достопримечательности:</span>
+      </div>
+      <div class="attraction__fields">
+        <div class="attraction__field-wrapper">
+          <input id="attraction1" type="checkbox" name="attraction" value="1" checked/>
+          <label class="attraction__lable" for="attraction1">Мост Дьявола</label>
+        </div>
+        <div class="attraction__field-wrapper">
+          <input id="attraction2" type="checkbox" name="attraction" value="2" checked/>
+          <label class="attraction__lable" for="attraction2">Слайд-парк</label>
+        </div>
+        <div class="attraction__field-wrapper">
+          <input id="attraction3" type="checkbox" name="attraction" value="3"/>
+          <label class="attraction__lable" for="attraction3">Гора-Колокол</label>
+        </div>
+        <div class="attraction__field-wrapper">
+          <input id="attraction4" type="checkbox" name="attraction" value="4" checked/>
+          <label class="attraction__lable" for="attraction4">Красные скалы</label>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="feelings fieldset">
+      <div class="attraction__title fieldset__title fieldset__title--centred">
+        <span>Опишите свои эмоции:</span>
+      </div>
+      <textarea placeholder="Опишите подробно все свои восторги"></textarea>
+    </fieldset>
+    <div class="submit fieldset">
+      <input class="button submit__button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ"/>
+      <span class="submit__required-note">* — обязательные поля</span>
     </div>
-  </footer>
+  </form>
+</div>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <p class="page-footer__note title">#visitSEDONA</p>
+    <div class="social-links">
+      <a href="#" class="social-links__link">
+        <svg class="social-links__icon" version="1.0" id="Layer_1" x="0px" y="0px"
+	 width="18px" height="14px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+<g id="W6EeEF_1_">
+  <g>
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15
+			c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86
+			c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0
+			c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881
+			c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461
+			c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+	</g>
+</g>
+</svg>
+      </a>
+      <a href="#" class="social-links__link">
+        <svg class="social-links__icon" version="1.0" id="Layer_1" x="0px" y="0px"	 width="9px" height="18px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+            <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114
+	H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787
+	C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+          </svg>
+      </a>
+      <a href="#" class="social-links__link">
+        <svg class="social-links__icon" version="1.0" id="Layer_1" x="0px" y="0px"
+	 width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+<path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835
+	C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+          </svg>
+      </a>
+    </div>
+    <span class="page-footer__copyright">Разработано</span>
+    <svg class="page-footer__htmlacademy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+      <path fill="#2E368F"
+            d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+    </svg>
+  </div>
+</footer>
 </body>
 </html>

@@ -1,2 +1,21 @@
 .map {
- }
+  position: relative;
+  &__marker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    width: 27px;
+    height: 27px;
+    background: url('@{imagesPath}icon-map-marker.svg');
+
+    @media @desktop-width {
+      width: 25px;
+      height: 25px;
+      background-size: 25px 25px;
+    }
+  }
+}
