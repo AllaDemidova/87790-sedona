@@ -33,6 +33,7 @@
     .inline-middle();
     width: 27px;
     height: 34px;
+    fill: @black-color;
     content: "";
     margin: 0 0 0 10px;
 
@@ -40,16 +41,12 @@
       margin-top: 40px;
     }
 
-    path {
-      fill: @black-color;
-    }
-
-    &:hover path {
+    &:hover {
       cursor: pointer;
       fill: @blue-color;
     }
 
-    &:active path {
+    &:active {
       fill: @gray-svg-color;
     }
   }
