@@ -139,7 +139,10 @@ module.exports = function (grunt) {
     },
 
     clean: {
-      build: ["build"]
+      build: ["build"],
+      options:{
+        force: true
+      }
     }
   });
 
