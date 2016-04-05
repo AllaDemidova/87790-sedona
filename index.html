@@ -136,7 +136,8 @@
       <picture>
         <source media="(min-width: 1200px)" srcset="../img/bg-map-desktop.jpg 1x">
         <source media="(min-width: 768px)" srcset="../img/bg-map-tablet.jpg 1x">
-        <img src="../img/bg-map-mobile.jpg" alt="Карта"/>
+        <source media="(min-width: 300px) and (max-width: 767px)" srcset="../img/bg-map-mobile.jpg 1x">
+        <img src="../img/bg-map-desktop.jpg" alt="Карта"/>
       </picture>
       <span class="map__marker"></span>
     </section>
