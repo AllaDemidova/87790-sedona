@@ -9,7 +9,7 @@
 
     @media @tablet-width {
       .clearfix();
-      padding: 35px 40px;
+      padding: 34px 43px;
     }
   }
 
@@ -21,11 +21,11 @@
 
     @media @tablet-width {
       .inline-middle();
-      margin: 0 0 0 122px;
+      margin: 0 0 0 118px;
     }
 
     @media @desktop-width {
-      margin: 0 0 0 350px;
+      margin: 0 0 0 351px;
     }
   }
 
@@ -36,9 +36,12 @@
     fill: @black-color;
     content: "";
     margin: 0 0 0 10px;
+    @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      margin: 0 0 0 5px;
+    }
 
     @media @mobile-width {
-      margin-top: 40px;
+      margin-top: 37px;
     }
 
     &:hover {
@@ -53,17 +56,17 @@
 
   .page-footer__note {
     @media @mobile-width {
-      margin: 0 0 40px 0;
+      margin: 0 0 35px 0;
     }
 
     @media @tablet-width {
       .inline-middle();
-      margin: 0 112px 0 20px;
+      margin: 0 105px 0 20px;
     }
 
     @media @desktop-width {
       .inline-middle();
-      margin: 0 255px 0 90px;
+      margin: 0 252px 0 90px;
 
     }
   }

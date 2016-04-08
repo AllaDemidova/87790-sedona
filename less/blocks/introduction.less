@@ -1,12 +1,14 @@
 .introduction {
-  position: relative;
-  padding: 20px 0 10px;
   background: #ffffff;
   text-align: center;
 
+  @media @mobile-width {
+    padding: 15px 10px 0;
+  }
+
   @media @tablet-width {
     margin: 0 auto;
-    width: 700px;
+    width: 680px;
   }
 
   p {

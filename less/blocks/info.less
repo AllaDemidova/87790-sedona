@@ -3,25 +3,32 @@
 
   @media @mobile-width {
     flex-direction: column;
-    padding: 15px 0;
+    padding: 15px 0 0;
   }
 
   @media @tablet-width {
     justify-content: space-between;
+    padding: 25px 0 30px;
+  }
+  @media @desktop-width {
+    padding: 25px 5px 50px;
   }
 
   &__block {
     @media @mobile-width {
       position: relative;
       text-align: left;
-      margin: 0 0 25px 0;
       padding: 0 0 0 50px;
+
+      &:not(:last-child){
+        margin: 0 0 30px 0;
+      }
     }
 
     @media @tablet-width {
       width: 170px;
 
-      &:nth-child(1) {
+      &:nth-child(2) {
         order: 1;
       }
     }
@@ -41,7 +48,7 @@
       }
 
       @media @tablet-width {
-        margin: 0 auto 30px;
+        margin: 0 auto 25px;
       }
     }
 
@@ -97,6 +104,10 @@
   &__title {
     @media @mobile-width {
       margin: 0 0 25px;
+    }
+
+    @media @tablet-width {
+      margin: 0 0 22px;
     }
   }
 
