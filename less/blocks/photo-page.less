@@ -1,13 +1,57 @@
 ﻿.photo-page {
   &__info {
     text-align: center;
-    padding: 15px 0;
+
+    @media @mobile-width {
+      padding: 0 10px;
+      margin: 0 0 15px 0;
+    }
+
+    @media @tablet-width {
+      width: 520px;
+      padding: 15px 0;
+      margin: 10px auto 0;
+    }
+
+    @media @desktop-width {
+      width: 540px;
+      margin: 12px auto 0;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.6;
+    }
   }
 
-  @media @tablet-width {
-    &__info {
-      width: 485px;
-      margin: 0 auto;
+  &__title {
+    @media @mobile-width {
+      margin: 0 0 30px;
+    }
+    @media @tablet-width {
+      font-size: 30px;
+      margin: 0 0 26px;
+    }
+  }
+
+  &__introduction {
+    text-align: center;
+
+    @media @mobile-width {
+      margin: 12px 0 0 0;
+    }
+    @media @tablet-width {
+      margin: 32px auto 24px;
+      width: 520px;
+    }
+
+    @media @desktop-width {
+      width: 550px;
+      margin: 70px auto 25px;
+    }
+
+    p {
+      line-height: 1.6;
     }
   }
 }

@@ -15,7 +15,7 @@
 
   &__photo-block {
     @media @mobile-width {
-      padding: 23px 20px;
+      padding: 16px 20px 27px;
       border-top: 1px solid @gray-color;
 
       &:last-of-type {
@@ -28,6 +28,15 @@
 
       &:first-child {
         width: 648px;
+
+        .photo-list__note-wrapper{
+          @media @tablet-width {
+            padding: 18px 21px 22px;
+          }
+          @media @desktop-width {
+            padding: 22px 21px;
+          }
+        }
       }
 
       &:not(:first-child) {
@@ -58,7 +67,7 @@
     max-width: 100%;
 
     @media @mobile-width {
-      margin: 0 0 20px;
+      margin: 0 0 19px;
 
       @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 280px;
@@ -75,12 +84,13 @@
 
     @media @tablet-width {
       justify-content: space-between;
-      padding: 15px 20px;
+      padding: 18px 35px 22px 21px;
       background: @gray-background;
     }
 
     @media @desktop-width {
       background: rgba(15, 8, 9, 0.4);
+      padding: 22px 29px 22px 21px;
       position: absolute;
       bottom: 0;
       right: 0;
@@ -90,12 +100,17 @@
 
   &__photo-title {
     font-family: "PT Sans Bold";
-    margin: 0 0 12px;
+    margin: 0 0 4px;
   }
 
   &__photo-author {
+    font-size: 14px;
+    text-transform: none;
     color: #333333;
-    margin: 0 0 10px;
+
+    @media @mobile-width {
+      margin: 0 0 12px;
+    }
 
     @media @tablet-width {
       margin: 0;
@@ -115,7 +130,11 @@
       color: @gray-svg-color;
       height: 20px;
       width: 22px;
-      margin-right: 15px;
+      margin-right: 10px;
+
+      @media @mobile-width {
+        margin-right: 15px;
+      }
 
       @media @desktop-width {
         background-image: url("@{imagesPath}icon-like-desktop.svg");
