@@ -18,4 +18,21 @@
       background-size: 25px 25px;
     }
   }
+
+  @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @media @mobile-width {
+      img{
+        max-width: 320px;
+        height: 350px;
+      }
+    }
+  }
+
+  @media @mobile-width {
+    margin: 0 0 -8px 0;
+  }
+  @media @tablet-width {
+    margin: 0 0 0 0;
+
+  }
 }

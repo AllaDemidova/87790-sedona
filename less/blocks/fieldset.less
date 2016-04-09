@@ -4,9 +4,12 @@
   box-sizing: border-box;
 
   @media @mobile-width {
-    border-top: 1px solid @gray-border;
-    padding: 25px 20px 30px;
+    padding: 19px 20px 25px;
     flex-basis: 100%;
+
+    &:not(:last-child){
+      border-top: 1px solid @gray-border;
+    }
   }
 
   @media @tablet-width {
@@ -21,7 +24,7 @@
     .font-bold();
     @media @mobile-width {
       text-align: center;
-      margin: 0 auto 25px;
+      margin: 0 auto 20px;
     }
   }
 
@@ -44,7 +47,7 @@
         display: inline-block;
         box-sizing: border-box;
         max-width: 400px;
-        padding: 0 57px;
+        padding: 0 61px;
         position: relative;
         z-index: 1;
         background: @white-color;
