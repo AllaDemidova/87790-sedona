@@ -110,6 +110,12 @@
     }
   }
 
+  @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .page-header__nav-item:nth-last-child(2){
+      margin: 0 50px 0 50px;
+    }
+  }
+
   &__close-btn {
     position: absolute;
     top: 17px;
@@ -161,7 +167,7 @@
     display: inline-block;
     width: 23px;
     height: 22px;
-    margin: 17px 20px 12px;
+    margin: 17px 20px 10px;
     background: url("@{imagesPath}icon-menu.svg");
 
     @media @tablet-width {

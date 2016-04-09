@@ -76,6 +76,12 @@
   width: 58px;
   height: 58px;
   content: "";
+
+  @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @media @mobile-width {
+      bottom:5px;
+    }
+  }
 }
 
 .button-states{

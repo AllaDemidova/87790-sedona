@@ -24,27 +24,23 @@
     <span class="page-header__toggle-btn"></span>
   </div>
 </header>
-<div class="main-container">
+<div class="main-container form-page">
   <div class="panorama panorama--mini">
     <div class="panorama__text">
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="459.754px" height="79.805px" viewBox="0 0 459.754 79.805" enable-background="new 0 0 459.754 79.805"
-	 xml:space="preserve">
+      <svg width="459.754px" height="79.805px" >
          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#text-sedona"></use>
       </svg>
     </div>
   </div>
-  <div class="introduction">
+  <div class="form-page__introduction">
     <section class="section-wrapper">
-      <h2 class="title">Оставьте свой отзыв</h2>
+      <h2 class="title form-page__title">Оставьте свой отзыв</h2>
       <p> Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а так же о посещённых достопримечательностях</p>
     </section>
   </div>
   <form class="form">
     <fieldset class="personal-data fieldset">
-      <div class="personal-data__title fieldset__title">
-        <span>Представьтесь, пожалуйста:</span>
-      </div>
+      <div class="personal-data__title fieldset__title">Представьтесь<span>, пожалуйста</span>:</div>
       <div class="personal-data__field-wrapper">
         <label class="personal-data__label" for="first-name">ИМЯ:</label>
         <input class="personal-data__input" type="text" id="first-name" name="first-name" value="Петр"/>
@@ -64,7 +60,7 @@
       </div>
       <div class="contacts__fields">
         <div class="contacts__field-wrapper">
-          <label class="contacts__label" for="phone">Контактный телефон:</label>
+          <label class="contacts__label" for="phone"><span>Контактный</span> телефон:</label>
           <div class="contacts__input-control contacts__input-control--phone">
             <input class="contacts__input" type="tel" id="phone" name="phone" placeholder="Введите телефон"/>
           </div>
@@ -120,7 +116,7 @@
       </div>
     </fieldset>
     <fieldset class="feelings fieldset">
-      <div class="attraction__title fieldset__title fieldset__title--centred">
+      <div class="feelings__title fieldset__title fieldset__title--centred">
         <span>Опишите свои эмоции:</span>
       </div>
       <textarea placeholder="Опишите подробно все свои восторги"></textarea>

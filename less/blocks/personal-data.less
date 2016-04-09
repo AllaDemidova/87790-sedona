@@ -1,29 +1,48 @@
 .personal-data {
   @media @tablet-width {
     flex-basis: 50%;
-    margin: 0 0 70px 0;
+    margin: 0 0 68px 0;
+    padding-left: 57px;
+
+    @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      flex-basis: 35%;
+    }
   }
   @media @desktop-width {
-    padding-left: 80px;
+    padding-left: 82px;
+    margin: 0 0 62px 0;
 
-  }
-  @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    flex-basis: 40%;
+    @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      flex-basis: 40%;
+    }
+
   }
 
   &__title {
     @media @mobile-width {
-      margin: 0 0 30px 0;
+      margin: 0 0 23px 0;
     }
     @media @tablet-width {
-      margin: 0 0 60px 0;
+      text-align: left;
+      margin: 0 0 55px 0;
+
+      span{
+        display: none;
+      }
+    }
+
+    @media @desktop-width{
+      margin: 0 0 57px 0;
+      span{
+        display: inline-block;
+      }
     }
   }
 
   &__field-wrapper {
     display: flex;
     &:not(:last-child) {
-      margin: 0 0 20px;
+      margin: 0 0 19px;
     }
   }
 
@@ -32,7 +51,7 @@
     width: 100%;
 
     @media @mobile-width {
-      margin: 0 0 0 12px;
+      margin: 0 0 0 20px;
     }
     @media @tablet-width {
       margin: 0 0 0 20px;

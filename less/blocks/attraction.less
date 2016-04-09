@@ -2,7 +2,11 @@
   flex-basis: 100%;
 
   @media @tablet-width {
-    margin: 0 0 70px 0;
+    margin: 0 0 38px 0;
+  }
+
+  @media @desktop-width {
+    margin: 0 0 36px 0;
   }
 
   &__fields {
@@ -24,7 +28,7 @@
   }
 
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   &__field-wrapper {
@@ -33,17 +37,23 @@
         order: 3;
       }
 
-      &:nth-last-child(1) {
+      &:nth-last-child(2) {
         order: 1;
       }
 
-      &:nth-of-type(1) {
+      &:nth-of-type(2) {
         order: 2;
       }
     }
 
     &:not(:last-child) {
-      margin: 0 0 35px 0;
+      @media @mobile-width {
+        margin: 0 0 20px 0;
+      }
+
+      @media @tablet-width {
+        margin: 0 0 27px 0;
+      }
     }
   }
 
@@ -57,7 +67,7 @@
       content: "";
       border-radius: 5px;
       background: @gray-background no-repeat center center;
-      margin: 0 25px 0 0;
+      margin: 0 23px 0 0;
     }
 
     &:hover:before {

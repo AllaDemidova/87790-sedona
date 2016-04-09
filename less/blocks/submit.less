@@ -2,26 +2,34 @@
   display: flex;
   flex-basis: 100%;
   justify-content: space-between;
-  margin-bottom: 35px;
+  margin-bottom: 8px;
 
   @media @tablet-width {
+    margin-bottom: 62px;
     width: 708px;
   }
 
   @media @desktop-width {
+    margin-bottom: 66px;
     width: 1140px;
   }
 
   &__button {
     @media @mobile-width {
-      margin-left: auto;
+      width: 100%;
     }
     @media @tablet-width {
       margin: 0;
-      width: 292px;
+      width: 323px;
     }
     @media @desktop-width {
-      width: 464px;
+      width: 480px;
+    }
+  }
+
+  @media @desktop-width {
+    .submit__button{
+      font-size: 21px;
     }
   }
 
