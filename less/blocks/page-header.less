@@ -1,13 +1,11 @@
 .page-header {
+  width: 100%;
+
   &__wrapper {
     .main-width();
 
-    @media @mobile-width {
-      text-align: right;
-    }
-
     @media @tablet-width {
-      padding: 0 25px 0 50px;
+      padding: 0 3.255% 0 6.51%;
     }
     @media @desktop-width {
       padding: 0 70px 0 90px;
@@ -20,12 +18,19 @@
     @media @mobile-width {
       background: @blue-color;
     }
+  }
+
+  &__nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media @mobile-width {
+      flex-direction: column;
+    }
 
     @media @tablet-width {
       height: 56px;
-      background: @white-color;
-      color: @black-color;
-      .clearfix();
     }
   }
 
@@ -44,17 +49,15 @@
     }
 
     @media @tablet-width {
-      height: 56px;
-      float: left;
 
       &:first-child {
-        margin: 0 75px 0 0;
+        margin: 0 10.822% 0 0;
       }
       &:nth-child(2){
-        margin: 0 53px 0 0;
+        margin: 0 7.647% 0 0;
       }
       &:nth-last-child(2) {
-        margin: 0 50px 0 55px;
+        margin: 0 7.215% 0 7.936%;
       }
 
       &:hover a {
@@ -67,7 +70,7 @@
     }
 
     @media @desktop-width {
-      &:first-child {
+     &:first-child {
         margin: 0 165px 0 0;
       }
       &:nth-child(2){
@@ -75,21 +78,6 @@
       }
       &:nth-last-child(2) {
         margin: 0 133px 0 98px;
-      }
-    }
-
-    a {
-      display: block;
-
-      font-family: 'PT Sans Bold';
-      @media @mobile-width {
-        padding: 16px 0 15px;
-        color: @white-color;
-        font-size: 18px;
-      }
-      @media @tablet-width {
-        padding: 19px 0;
-        color: @black-color;
       }
     }
 
@@ -111,10 +99,26 @@
   }
 
   @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .page-header__nav-item:nth-last-child(2){
-      margin: 0 50px 0 50px;
+    &__nav-item:nth-last-child(2){
+      margin: 0 6.51%;
     }
   }
+
+  &__nav-link{
+    display: block;
+
+    font-family: 'PT Sans Bold';
+    @media @mobile-width {
+      padding: 16px 0 15px;
+      color: @white-color;
+      font-size: 18px;
+    }
+    @media @tablet-width {
+      padding: 19px 0;
+      color: @black-color;
+    }
+  }
+
 
   &__close-btn {
     position: absolute;
@@ -143,7 +147,6 @@
     }
     @media @tablet-width {
       float: left;
-     // margin: 0 50px 0 0;
       background-image: url("@{imagesPath}logo-sedona-tablet.svg");
     }
     @media @desktop-width {
@@ -153,25 +156,19 @@
     }
   }
 
-  &__logo-triangle {
-    display: none;
-
-    @media @desktop-width {
-      display: block;
-      fill: @blue-color;
-    }
-
-  }
-
-  &__toggle-btn {
-    display: inline-block;
-    width: 23px;
-    height: 22px;
-    margin: 17px 20px 10px;
-    background: url("@{imagesPath}icon-menu.svg");
+  &__toggle{
+    text-align: right;
 
     @media @tablet-width {
       display: none;
+    }
+
+    &-btn {
+      display: inline-block;
+      width: 23px;
+      height: 22px;
+      margin: 17px 20px 10px;
+      background: url("@{imagesPath}icon-menu.svg");
     }
   }
 }

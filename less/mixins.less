@@ -1,17 +1,11 @@
 ﻿.main-width() {
   margin: 0 auto;
   box-sizing: border-box;
-
-  @media @mobile-width {
-    width: 320px;
-  }
+  min-width: 320px;
 
   @media @tablet-width {
-    width: 768px;
-  }
-
-  @media @desktop-width {
-    width: 1200px;
+    min-width: 768px;
+    max-width: 1200px;
   }
 }
 
