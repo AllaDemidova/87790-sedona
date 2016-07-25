@@ -1,5 +1,23 @@
 .map {
   position: relative;
+
+  @media @mobile-width {
+    margin: 0 0 -8px 0;
+  }
+  @media @tablet-width {
+    margin: 0 0 0 0;
+
+  }
+
+  @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @media @mobile-width {
+      img{
+        max-width: 320px;
+        height: 350px;
+      }
+    }
+  }
+
   &__marker {
     position: absolute;
     top: 0;
@@ -19,20 +37,21 @@
     }
   }
 
-  @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  &__image{
+    width:100%;
+    height: 350px;
+    background: @map-background center center no-repeat;
+    background-size: cover;
+
     @media @mobile-width {
-      img{
-        max-width: 320px;
-        height: 350px;
-      }
+      background-image: url("@{imagesPath}bg-map-mobile.jpg");
     }
-  }
+    @media @tablet-width {
+      background-image: url("@{imagesPath}bg-map-tablet.jpg");
+    }
 
-  @media @mobile-width {
-    margin: 0 0 -8px 0;
-  }
-  @media @tablet-width {
-    margin: 0 0 0 0;
-
+    @media @desktop-width {
+      background-image: url("@{imagesPath}bg-map-desktop.jpg");
+    }
   }
 }

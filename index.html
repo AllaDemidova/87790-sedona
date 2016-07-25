@@ -43,9 +43,7 @@
   <div class="main-page">
     <div class="main-page__reasons-wrapper">
       <section class="reasons reasons--primary reasons--primary-left">
-        <svg class="reasons__triangle" width="320" height="37" viewBox="0 0 320 37">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bg-triangle"></use>
-        </svg>
+        <div class="reasons__triangle"></div>
         <div class="reasons__item reasons__item--primary">
           <div class="section-wrapper">
             <header class="reasons__header">
@@ -132,12 +130,7 @@
       </div>
     </section>
     <section class="map">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="../img/bg-map-desktop.jpg 1x">
-        <source media="(min-width: 768px)" srcset="../img/bg-map-tablet.jpg 1x">
-        <source media="(min-width: 300px) and (max-width: 767px)" srcset="../img/bg-map-mobile.jpg 1x">
-        <img src="../img/bg-map-desktop.jpg" alt="Карта"/>
-      </picture>
+      <div class="map__image"></div>
       <span class="map__marker"></span>
     </section>
   </div>
@@ -162,10 +155,11 @@
         </svg>
       </a>
     </div>
-    <span class="page-footer__copyright">Разработано</span>
-    <svg class="page-footer__htmlacademy" width="60px" height="60px">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
-    </svg>
+    <span class="page-footer__copyright">Разработано
+        <svg class="page-footer__htmlacademy" width="60px" height="60px">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
+        </svg>
+    </span>
   </div>
 </footer>
 </body>
