@@ -1,13 +1,16 @@
 "use strict";
 
 module.exports = function (grunt) {
+  var staticPagesPath = "src/pages/*.html";
+  var stylesheetPath = "src/less/";
+
   require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
     less: {
       style: {
         files: {
-          "build/css/style.css": "less/style.less"
+          "build/css/style.css": stylesheetPath + "style.less"
         }
       }
     },
@@ -100,7 +103,7 @@ module.exports = function (grunt) {
 
     watch: {
       html: {
-        files: ["*.html"],
+        files: [staticPagesPath],
         tasks: ["copy:html"],
         options: {
           spawn: false
@@ -108,7 +111,7 @@ module.exports = function (grunt) {
       },
 
       style:{
-        files: ["less/**/*.less"],
+        files: [stylesheetPath + "**/*.less"],
         tasks: ["less", "postcss", "csso"],
         options: {
           spawn: false
@@ -117,23 +120,42 @@ module.exports = function (grunt) {
     },
 
     copy: {
-      build: {
+      fonts: {
         files: [{
           expand: true,
           src: [
-            "fonts/**/*.{woff,woff2}",
-            "img/**",
-            "js/**",
-            "*.html"
+            "src/fonts/**/*.{woff,woff2}"
           ],
-          dest: "build"
+          dest: "build/fonts",
+          flatten: true
+        }]
+      },
+      images: {
+        files: [{
+          expand: true,
+          src: [
+            "src/img/*.{jpg,svg}"
+          ],
+          dest: "build/img",
+          flatten: true
+        }]
+      },
+      icons: {
+        files: [{
+          expand: true,
+          src: [
+            "src/img/icons/*.svg"
+          ],
+          dest: "build/img/icons",
+          flatten: true
         }]
       },
       html:{
         files: [{
           expand: true,
-          src: ["*.html"],
-          dest: "build"
+          src: staticPagesPath,
+          dest: "build",
+          flatten: true
         }]
       }
     },

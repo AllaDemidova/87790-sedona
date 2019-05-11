@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css"/>
+  <link rel="stylesheet" href="../css/style.min.css"/>
   <title>HTML Academy: Седона</title>
 </head>
 <body>
@@ -14,9 +14,9 @@
     <nav class="page-header__nav">
       <ul class="page-header__nav-list">
         <li class="page-header__nav-item"><a class="page-header__nav-link" href="index.html">Главная</a></li>
-        <li class="page-header__nav-item page-header__nav-item--current"><a class="page-header__nav-link" href="photo.html">фото и видео</a></li>
+        <li class="page-header__nav-item"><a class="page-header__nav-link" href="photo.html">фото и видео</a></li>
         <li class="page-header__nav-item"><a href="/" class="page-header__logo"></a></li>
-        <li class="page-header__nav-item"><a class="page-header__nav-link" href="form.html">Форма отзыва</a></li>
+        <li class="page-header__nav-item page-header__nav-item--current"><a class="page-header__nav-link" href="form.html">Форма отзыва</a></li>
         <li class="page-header__nav-item"><a class="page-header__nav-link" href="https://htmlacademy.ru/">HTML academy</a></li>
       </ul>
       <span class="close-btn page-header__close-btn"></span>
@@ -26,123 +26,108 @@
     </div>
   </div>
 </header>
-<div class="main-container photo-page">
+<div class="main-container form-page">
   <div class="panorama panorama--mini">
     <div class="panorama__text">
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.754px" height="79.805px" viewBox="0 0 459.754 79.805" enable-background="new 0 0 459.754 79.805"	 xml:space="preserve">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#text-sedona"></use>
+      <svg width="459.754px" height="79.805px" >
+         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#text-sedona"></use>
       </svg>
     </div>
   </div>
-  <div class="photo-page__introduction">
+  <div class="form-page__introduction">
     <section class="section-wrapper">
-      <h2 class="title photo-page__title">Фото и видео</h2>
-      <p> Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
-        экономике</p>
+      <h2 class="title form-page__title">Оставьте свой отзыв</h2>
+      <p> Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а так же о посещённых достопримечательностях</p>
     </section>
   </div>
-  <section class="photo-list">
-    <div class="photo-list__photo-block">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="../img/photo-1-desktop.jpg 1x, ../img/photo-1-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="../img/photo-1-tablet.jpg 1x, ../img/photo-1-tablet@2x.jpg 2x">
-        <source media="(min-width: 300px) and (max-width: 767px)" srcset="../img/photo-1-mobile.jpg 1x, ../img/photo-1-mobile@2x.jpg 2x">
-        <img class="photo-list__photo" src="../img/photo-1-desktop.jpg" srcset="../img/photo-1-desktop@2x.jpg 2x"
-             alt="Неродные просторы"/>
-      </picture>
-      <div class="photo-list__note-wrapper">
-        <div>
-          <p class="photo-list__photo-title">неродные просторы</p>
-          <p class="photo-list__photo-author">Автор фото: Борис</p>
-        </div>
-        <span class="photo-list__photo-vote">1350</span>
+  <form class="form">
+    <fieldset class="personal-data fieldset">
+      <div class="personal-data__title fieldset__title">Представьтесь<span>, пожалуйста</span>:</div>
+      <div class="personal-data__field-wrapper">
+        <label class="personal-data__label" for="first-name">ИМЯ:</label>
+        <input class="personal-data__input" type="text" id="first-name" name="first-name" value="Петр"/>
       </div>
-    </div>
-    <div class="photo-list__photo-block">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="../img/photo-2-desktop.jpg 1x, ../img/photo-2-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="../img/photo-2-tablet.jpg 1x, ../img/photo-2-tablet@2x.jpg 2x">
-        <source media="(min-width: 300px) and (max-width: 767px)" srcset="../img/photo-2-mobile.jpg 1x, ../img/photo-2-mobile@2x.jpg 2x">
-        <img class="photo-list__photo" src="../img/photo-2-desktop.jpg" srcset="../img/photo-2-desktop@2x.jpg 2x"
-             alt="Местная растительность"/>
-      </picture>
-      <div class="photo-list__note-wrapper">
-        <div>
-          <p class="photo-list__photo-title">Местная растительность</p>
-          <p class="photo-list__photo-author">Автор фото: Сергей</p>
-        </div>
-        <span class="photo-list__photo-vote">143</span>
+      <div class="personal-data__field-wrapper">
+        <label class="personal-data__label" for="last-name">фАМИЛИЯ:</label>
+        <input class="personal-data__input" type="text" id="last-name" name="last-name" value="Иванов"/>
       </div>
-    </div>
-    <div class="photo-list__photo-block">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="../img/photo-3-desktop.jpg 1x, ../img/photo-3-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="../img/photo-3-tablet.jpg 1x, ../img/photo-3-tablet@2x.jpg 2x">
-        <source media="(min-width: 300px) and (max-width: 767px)" srcset="../img/photo-3-mobile.jpg 1x, ../img/photo-3-mobile@2x.jpg 2x">
-        <img class="photo-list__photo" src="../img/photo-3-desktop.jpg" srcset="../img/photo-3-desktop@2x.jpg 2x"
-             alt="Дорога на север"/>
-      </picture>
-      <div class="photo-list__note-wrapper">
-        <div>
-          <p class="photo-list__photo-title">Дорога на север</p>
-          <p class="photo-list__photo-author">Автор фото: Петр</p>
-        </div>
-        <span class="photo-list__photo-vote">96</span>
+      <div class="personal-data__field-wrapper">
+        <label class="personal-data__label" for="patronymic">ОТЧЕСТВО:</label>
+        <input class="personal-data__input" type="text" id="patronymic" name="patronymic" value="Александрович"/>
       </div>
-    </div>
-    <div class="photo-list__photo-block">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="../img/photo-4-desktop.jpg 1x, ../img/photo-4-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="../img/photo-4-tablet.jpg 1x, ../img/photo-4-tablet@2x.jpg 2x">
-        <source media="(min-width: 300px) and (max-width: 767px)" srcset="../img/photo-4-mobile.jpg 1x, ../img/photo-4-mobile@2x.jpg 2x">
-        <img class="photo-list__photo" src="../img/photo-4-desktop.jpg" srcset="../img/photo-4-desktop@2x.jpg 2x"
-             alt="Мост дьявола"/>
-      </picture>
-      <div class="photo-list__note-wrapper">
-        <div>
-          <p class="photo-list__photo-title">Мост дьявола</p>
-          <p class="photo-list__photo-author">Автор фото: Антон</p>
-        </div>
-        <span class="photo-list__photo-vote">254</span>
+    </fieldset>
+    <fieldset class="contacts fieldset">
+      <div class="contacts__title fieldset__title fieldset__title--centred">
+        <span>Контактная информация:</span>
       </div>
-    </div>
-  </section>
-  <section class="photo-page__info">
-    <div class="section-wrapper">
-      <h2 class="title photo-page__title">Все еще сомневаетесь? </h2>
-      <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подоражали в очередной раз</p>
-    </div>
-  </section>
-  <section class="video">
-    <div class="video__video-poster">
-      <video src="#"></video>
-    </div>
-    <div class="video__controls">
-        <span class="video__replay">
-          <svg class="video__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="16px" height="20px" viewBox="0 0 16 20" enable-background="new 0 0 16 20" xml:space="preserve">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video-replay"></use>
-          </svg>
-        </span>
-      <div class="video__progress-bar-container">
-        <div class="video__progress-bar">
-          <span class="video__handler"></span>
+      <div class="contacts__fields">
+        <div class="contacts__field-wrapper">
+          <label class="contacts__label" for="phone"><span>Контактный</span> телефон:</label>
+          <div class="contacts__input-control contacts__input-control--phone">
+            <input class="contacts__input" type="tel" id="phone" name="phone" placeholder="Введите телефон"/>
+          </div>
+          <span class="validation-error contacts__error">Ошибка, перепроверьте номер</span>
+        </div>
+        <div class="contacts__field-wrapper">
+          <label class="contacts__label" for="email">Электронная почта:</label>
+          <div class="contacts__input-control contacts__input-control--mail">
+            <input class="contacts__input" type="tel" id="email" name="email" placeholder="Введите e-mail"/>
+          </div>
+          <span class="validation-error contacts__error"></span>
         </div>
       </div>
-        <span class="video__close-cpation">
-          <svg class="video__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="32px" height="20px" viewBox="0 0 32 20" enable-background="new 0 0 32 20" xml:space="preserve">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video-subtitles"></use>
-          </svg>
-        </span>
-        <span class="video__full-screen">
-          <svg class="video__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video-fullscreen"></use>
-          </svg>
-        </span>
+    </fieldset>
+    <fieldset class="impression fieldset">
+      <div class="impression__title fieldset__title">
+        <span>Ваше общее впечатление:</span>
+      </div>
+      <div class="impression__field-wrapper">
+        <input type="radio" id="impression1" name="impression" value="1" checked/>
+        <label class="impression__label" for="impression1">Скорее положительное</label>
+      </div>
+      <div class="impression__field-wrapper">
+        <input type="radio" id="impression2" name="impression" value="2"/>
+        <label class="impression__label" for="impression2">Скорее отрицательное</label>
+      </div>
+      <div class="impression__field-wrapper">
+        <input type="radio" id="impression3" name="impression" value="3"/>
+        <label class="impression__label" for="impression3">Затрудняюсь ответить</label>
+      </div>
+    </fieldset>
+    <fieldset class="attraction fieldset">
+      <div class="attraction__title fieldset__title fieldset__title--centred">
+        <span>Посещенные достопримечательности:</span>
+      </div>
+      <div class="attraction__fields">
+        <div class="attraction__field-wrapper">
+          <input id="attraction1" type="checkbox" name="attraction" value="1" checked/>
+          <label class="attraction__lable" for="attraction1">Мост Дьявола</label>
+        </div>
+        <div class="attraction__field-wrapper">
+          <input id="attraction2" type="checkbox" name="attraction" value="2" checked/>
+          <label class="attraction__lable" for="attraction2">Слайд-парк</label>
+        </div>
+        <div class="attraction__field-wrapper">
+          <input id="attraction3" type="checkbox" name="attraction" value="3"/>
+          <label class="attraction__lable" for="attraction3">Гора-Колокол</label>
+        </div>
+        <div class="attraction__field-wrapper">
+          <input id="attraction4" type="checkbox" name="attraction" value="4" checked/>
+          <label class="attraction__lable" for="attraction4">Красные скалы</label>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="feelings fieldset">
+      <div class="feelings__title fieldset__title fieldset__title--centred">
+        <span>Опишите свои эмоции:</span>
+      </div>
+      <textarea placeholder="Опишите подробно все свои восторги"></textarea>
+    </fieldset>
+    <div class="submit fieldset">
+      <input class="button submit__button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ"/>
+      <span class="submit__required-note">* — обязательные поля</span>
     </div>
-  </section>
+  </form>
 </div>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
