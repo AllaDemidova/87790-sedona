@@ -5,10 +5,10 @@
     .main-width();
 
     @media @tablet-width {
-      padding: 0 3.255% 0 6.51%;
+      padding: 0 3.385% 0 6.38%;
     }
     @media @desktop-width {
-      padding: 0 70px 0 90px;
+      padding: 0 5.83% 0 7.5%;
     }
   }
 
@@ -23,7 +23,6 @@
   &__nav-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     @media @mobile-width {
       flex-direction: column;
@@ -46,18 +45,25 @@
       &:last-child {
         box-shadow: inset 0 -9px 12px -12px rgba(0, 0, 0, 0.5);
       }
+
+      &--logo {
+        .button-states();
+        order: 1;
+      }
     }
 
     @media @tablet-width {
 
       &:first-child {
-        margin: 0 10.822% 0 0;
+        margin-right: 10.822%;
       }
-      &:nth-child(2){
-        margin: 0 7.647% 0 0;
+
+      &:last-child {
+        margin-left: 7.936%;
       }
-      &:nth-last-child(2) {
-        margin: 0 7.215% 0 7.936%;
+
+      &--logo {
+        margin: 0 6.966%;
       }
 
       &:hover a {
@@ -71,13 +77,15 @@
 
     @media @desktop-width {
      &:first-child {
-        margin: 0 165px 0 0;
+        margin-right: 13.75%;
       }
-      &:nth-child(2){
-        margin: 0 97px 0 0;
+
+      &:last-child {
+        margin-left: 11.333%;
       }
-      &:nth-last-child(2) {
-        margin: 0 133px 0 98px;
+
+      &--logo {
+        margin: 0 8.167%;
       }
     }
 
@@ -131,8 +139,6 @@
 
   &__logo {
     display: block;
-    width: 102px;
-    height: 84px;
     background: center center no-repeat;
 
     @media @mobile-width {
@@ -145,6 +151,8 @@
       background-image: url("@{imagesPath}logo-sedona-mobile.svg");
     }
     @media @tablet-width {
+      width: 102px;
+      height: 84px;
       float: left;
       background-image: url("@{imagesPath}logo-sedona-tablet.svg");
     }

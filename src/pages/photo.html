@@ -14,8 +14,10 @@
     <nav class="page-header__nav">
       <ul class="page-header__nav-list">
         <li class="page-header__nav-item"><a class="page-header__nav-link" href="index.html">Главная</a></li>
-        <li class="page-header__nav-item page-header__nav-item--current"><a class="page-header__nav-link" href="photo.html">фото и видео</a></li>
-        <li class="page-header__nav-item"><a href="/" class="page-header__logo"></a></li>
+        <li class="page-header__nav-item  page-header__nav-item--current"><a class="page-header__nav-link" href="photo.html">фото и видео</a></li>
+        <li class="page-header__nav-item--logo">
+          <a href="/" class="page-header__logo"></a>
+        </li>
         <li class="page-header__nav-item"><a class="page-header__nav-link" href="form.html">Форма отзыва</a></li>
         <li class="page-header__nav-item"><a class="page-header__nav-link" href="https://htmlacademy.ru/">HTML academy</a></li>
       </ul>
@@ -28,11 +30,9 @@
 </header>
 <div class="main-container photo-page">
   <div class="panorama panorama--mini">
-    <div class="panorama__text">
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.754px" height="79.805px" viewBox="0 0 459.754 79.805" enable-background="new 0 0 459.754 79.805"	 xml:space="preserve">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#text-sedona"></use>
-      </svg>
-    </div>
+    <svg class="panorama__text-mini" width="459.754px" height="79.805px">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#text-sedona"></use>
+    </svg>
   </div>
   <div class="photo-page__introduction">
     <section class="section-wrapper">
@@ -164,10 +164,11 @@
         </svg>
       </a>
     </div>
-    <span class="page-footer__copyright">Разработано</span>
-    <svg class="page-footer__htmlacademy" width="60px" height="60px">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#htmlacademy-logo"></use>
-    </svg>
+    <span class="page-footer__copyright">Разработано
+        <svg class="page-footer__htmlacademy" width="60px" height="60px">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
+        </svg>
+    </span>
   </div>
 </footer>
 </body>

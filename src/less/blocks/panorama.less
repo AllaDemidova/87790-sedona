@@ -1,6 +1,8 @@
 .panorama {
   width: 100%;
   background: @white-color no-repeat;
+  display: flex;
+  justify-content: center;
 
   @media @mobile-width {
     background-image: url("@{imagesPath}bg-intro-triangle-mobile.svg"),
@@ -34,24 +36,24 @@
   }
 
   &__text {
-    margin: 0 auto;
-
     @media @mobile-width {
-      width: 280px;
-
-      svg {
-        width: inherit;
+      &--main {
+        height: 210px;
+        margin-top: 90px;
+      }
+      &-mini {
+        height: 39px;
+        margin-top: 55px;
       }
     }
 
     @media @tablet-width {
-      width: 460px;
-      height: 351px;
-      padding: 75px 0 0;
-    }
-
-    @media @desktop-width {
-      padding: 80px 0 0;
+      &--main {
+        margin-top: 78px;
+      }
+      &-mini {
+        margin-top: 95px;
+      }
     }
   }
 
@@ -61,19 +63,11 @@
     @media @mobile-width {
       height: 390px;
       background-size: cover, cover;
-
-      .panorama__text{
-        padding: 90px 0 0;
-      }
-
-      svg {
-        height: 210px;
-      }
     }
 
     @media @tablet-width {
       background-size: 102%, cover;
-      height: 518px;
+      height: 516px;
     }
 
     @media @desktop-width {
@@ -87,24 +81,12 @@
       background-position: center bottom, -60px -230px;
       background-size: cover, 126.66% 389px;
       height: 160px;
-
-      .panorama__text{
-        padding: 55px 0 0;
-      }
-
-      svg {
-        height: 39px;
-      }
     }
 
     @media @tablet-width {
       background-position: center bottom, -90px -270px;
       background-size: 102%, 111.71875% 558px;
       height: 290px;
-
-      svg {
-        margin-top: 20px;
-      }
     }
 
     @media @desktop-width {
@@ -112,8 +94,6 @@
       background-size: 1201px 57px, 1290px 568px;
       height: 300px;
     }
-
-
   }
 }
 
