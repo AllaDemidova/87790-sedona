@@ -17,12 +17,11 @@
       padding: 15px 0;
     }
     @media @tablet-width {
-      width: 256px;
-      height: 256px;
+      min-width: 256px;
+      max-width: 400px;
       padding: 10px 0;
     }
     @media @desktop-width {
-      width: 400px;
       padding: 17px 0 0 0;
     }
   }
@@ -78,17 +77,6 @@
   &--primary {
     background: @blue-color;
     color: #ffffff;
-
-    @media @tablet-width {
-      float: right;
-    }
-  }
-
-  &--primary-left {
-    @media @tablet-width {
-
-      float: left;
-    }
   }
 
   &--secondary {
